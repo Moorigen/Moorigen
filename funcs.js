@@ -27,3 +27,11 @@ function webHook() {
 	}
 	userAction();
 }
+
+async function delay() {
+	var to = new Promise(function(resolve) {
+		setTimeout(function() {resolve("Delay")}, 2000);
+	});
+	document.getElementById("a").innerHTML = await to;
+	document.getElementById("img1").style.border = "thick solid #FF0000";
+}
