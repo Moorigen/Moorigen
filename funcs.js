@@ -37,7 +37,7 @@ async function delay() {
 }
 
 function setText() {
-	//document.getElementById("a").innerHTML = document.getElementById("input").value;
+	document.getElementById("a").innerHTML = document.getElementById("input").value;
 	$.ajax({
 		type: "POST",
 		url: "text.txt",
