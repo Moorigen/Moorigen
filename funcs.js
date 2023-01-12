@@ -35,3 +35,13 @@ async function delay() {
 	document.getElementById("a").innerHTML = await to;
 	document.getElementById("img1").style.border = "thick solid #FF0000";
 }
+
+function setText() {
+	//document.getElementById("a").innerHTML = document.getElementById("input").value;
+	$.ajax({
+		type: "POST",
+		url: "text.txt",
+		dataType: "text",
+		data: "we changed the text"
+	});
+}
