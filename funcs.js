@@ -17,3 +17,13 @@ function textFile() {
         success: function(data) {document.getElementById("a").innerHTML = data;}
      });
 }
+
+function webHook() {
+	console.log("requesting");
+	const userAction = async () => {
+		const response = await fetch('http://mellon-011.hs-mittweida.de/textapi/es/user/admin');
+		const myJson = await response.json(); //extract JSON from the http response
+		console.log(myJson);
+	}
+	userAction();
+}
