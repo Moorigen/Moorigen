@@ -6,7 +6,7 @@ function closingCode(){
    } else {
 	   setCookie("reloads", 1, 1)
    }
-   setCookie("evalStep", evalStep, 10);
+   setCookie("evalStep", votes.length, 10);
    return null;
 }
 
