@@ -6,7 +6,13 @@ function closingCode(){
    } else {
 	   setCookie("reloads", 1, 1)
    }
-   setCookie("evalStep", votes.length, 10);
+   var evalStepCk = getCookie("evalStep");
+   if(evalStepCk != "") {
+		evalStepCk = parseInt(evalStepCk);
+		setCookie("evalStep", evalStepCk + votes.length, 10);
+   } else {
+	   setCookie("evalStep", votes.length, 10);
+   }
    return null;
 }
 
