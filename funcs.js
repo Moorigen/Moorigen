@@ -133,9 +133,7 @@ async function startEval(vote) {
 		document.getElementById("matrNrField").style.display = "none";
 		document.getElementById("imgContainer").style.display = "block";
 		document.getElementById("startButton").style.display = "none";
-		document.getElementById("evalButton1").style.display = "inline";
-		document.getElementById("evalButton2").style.display = "inline";
-		document.getElementById("evalButton3").style.display = "inline";
+		document.getElementById("evalButtons").style.display = "block";
 		
 		var evalStepCk = getCookie("evalStep");
 		evalStepCk = parseInt(evalStepCk);
@@ -146,15 +144,13 @@ async function startEval(vote) {
 	}
 	if(evalStep >= nops.length){
 		document.getElementById("imgContainer").style.display = "none";
-		document.getElementById("evalButton1").style.display = "none";
-		document.getElementById("evalButton2").style.display = "none";
-		document.getElementById("evalButton3").style.display = "none";
+		document.getElementById("evalButtons").style.display = "none";
 		document.getElementById("finishedContainer").style.display = "block";
 		return;
 	}
-	document.getElementById("evalButton1").disabled = true;
-	document.getElementById("evalButton2").disabled = true;
-	document.getElementById("evalButton3").disabled = true;
+	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
+		button.disabled = true;
+	});
 	document.getElementById(nops[evalStep]).src = "NOP.png";
 	document.getElementById("img1").style.opacity = "100%";
 	document.getElementById("img2").style.opacity = "100%";
@@ -174,7 +170,7 @@ async function startEval(vote) {
 	document.getElementById(nops[evalStep]).src = "YEP.png";
 	document.getElementById(nops[evalStep]).style.border = "thick solid #333333";
 	evalStep++;
-	document.getElementById("evalButton1").disabled = false;
-	document.getElementById("evalButton2").disabled = false;
-	document.getElementById("evalButton3").disabled = false;
+	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
+		button.disabled = false;
+	});
 }
