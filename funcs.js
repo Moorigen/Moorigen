@@ -2,7 +2,7 @@ window.onbeforeunload = closingCode;
 function closingCode(){
    var reloads = getCookie("reloads");
    if(reloads) {
-	   setCookie("reloads", parseInt(getCookie("reloads")) + 1, 1)
+	   setCookie("reloads", parseInt(reloads) + 1, 1)
    } else {
 	   setCookie("reloads", 1, 1)
    }
@@ -15,6 +15,12 @@ function loadCode() {
 		console.log(getCookie("reloads"));
 	} else {
 		console.log("first visit");
+	}
+	var mNr = getCookie("MatrNr");
+	if(mNr != "") {
+		document.getElementById("matrNrInput").value = mNr;
+		document.getElementById("matrNrInput").disabled = true;
+		document.getElementById("startButton").innerHTML = "CONTINUE";
 	}
 }
 
@@ -103,6 +109,13 @@ const nops = ["img1","img3","img2","img1","img1","img3"];
 var votes = [];
 async function startEval(vote) {
 	if(evalStep == 0) {
+		var mNr = parseInt(document.getElementById("matrNrInput").value);
+		if (isNaN(mNr) || mNr < 0 || mNr > 75000) {
+			console.log("returning");
+			return;
+		}
+		setCookie("MatrNr", mNr, 10);
+		
 		document.getElementById("startButton").style.display = "none";
 		document.getElementById("evalButton1").style.display = "inline";
 		document.getElementById("evalButton2").style.display = "inline";

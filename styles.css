@@ -1,6 +1,13 @@
 body {
 	background-color: #242424;
 }
+
+h1 {
+	color: #DFDFDF;
+}
+p {
+	color: #DDDDDD;
+}
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto;
