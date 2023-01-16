@@ -2,7 +2,7 @@ window.onbeforeunload = closingCode;
 function closingCode(){
    var reloads = getCookie("reloads");
    if(reloads) {
-	   setCookie("reloads", getCookie("reloads") + 1, 1)
+	   setCookie("reloads", parseInt(getCookie("reloads")) + 1, 1)
    } else {
 	   setCookie("reloads", 1, 1)
    }
@@ -21,16 +21,16 @@ function loadCode() {
 function setCookie(cname,cvalue,exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires=" + d.toUTCString();
+  var expires = "expires=" + d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
     while (c.charAt(0) == ' ') {
       c = c.substring(1);
     }
@@ -41,16 +41,12 @@ function getCookie(cname) {
   return "";
 }
 
+function deleteCookie(cname) {
+	document.cookie = cname + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
 
-var yep = true;
-
-function buttonClick() {
-	if(yep){
-		document.getElementById("img1").src = "NOP.png";
-	} else {
-		document.getElementById("img1").src = "YEP.png";
-	}
-	yep = !yep;
+function deleteCookies() {
+	deleteCookie("reloads");
 }
 
 function textFile() {
