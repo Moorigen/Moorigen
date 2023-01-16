@@ -22,9 +22,6 @@ function loadCode() {
 		document.getElementById("matrNrInput").value = mNr;
 		document.getElementById("matrNrInput").disabled = true;
 		document.getElementById("startButton").innerHTML = "CONTINUE";
-		
-		var evalStepCk = getCookie("evalStep");
-		evalStep = parseInt(evalStepCk);
 	}
 }
 
@@ -35,7 +32,7 @@ function setCookie(cname,cvalue,exdays) {
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function getCookie(cname) {
+function getCookieOld(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
   var ca = decodedCookie.split(';');
@@ -51,12 +48,25 @@ function getCookie(cname) {
   return "";
 }
 
+function getCookie(cname) {
+  const decodedCookie = decodeURIComponent(document.cookie);
+  const match = decodedCookie.match(new RegExp(cname + '=([^;]+)'));
+  return match ? match[1] : "";
+}
+
 function deleteCookie(cname) {
 	document.cookie = cname + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
 
-function deleteCookies() {
-	deleteCookie("reloads");
+function deleteAllCookies() {
+    var cookies = document.cookie.split(";");
+
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
 }
 
 function textFile() {
@@ -126,6 +136,10 @@ async function startEval(vote) {
 		document.getElementById("evalButton1").style.display = "inline";
 		document.getElementById("evalButton2").style.display = "inline";
 		document.getElementById("evalButton3").style.display = "inline";
+		
+		var evalStepCk = getCookie("evalStep");
+		evalStepCk = parseInt(evalStepCk);
+		evalStep = isNaN(evalStepCk) ? 0 : evalStepCk;
 	} else {
 		votes[evalStep - 1] = vote;
 		console.log(votes);
