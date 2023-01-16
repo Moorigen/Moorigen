@@ -6,6 +6,7 @@ function closingCode(){
    } else {
 	   setCookie("reloads", 1, 1)
    }
+   setCookie("evalStep", evalStep, 10);
    return null;
 }
 
@@ -21,6 +22,9 @@ function loadCode() {
 		document.getElementById("matrNrInput").value = mNr;
 		document.getElementById("matrNrInput").disabled = true;
 		document.getElementById("startButton").innerHTML = "CONTINUE";
+		
+		var evalStepCk = getCookie("evalStep");
+		evalStep = parseInt(evalStepCk);
 	}
 }
 
@@ -110,12 +114,14 @@ var votes = [];
 async function startEval(vote) {
 	if(evalStep == 0) {
 		var mNr = parseInt(document.getElementById("matrNrInput").value);
-		if (isNaN(mNr) || mNr < 0 || mNr > 75000) {
+		if (isNaN(mNr) || mNr < 10000 || mNr > 75000) {
 			console.log("returning");
 			return;
 		}
 		setCookie("MatrNr", mNr, 10);
 		
+		document.getElementById("matrNrField").style.display = "none";
+		document.getElementById("imgContainer").style.display = "block";
 		document.getElementById("startButton").style.display = "none";
 		document.getElementById("evalButton1").style.display = "inline";
 		document.getElementById("evalButton2").style.display = "inline";
@@ -125,6 +131,11 @@ async function startEval(vote) {
 		console.log(votes);
 	}
 	if(evalStep >= nops.length){
+		document.getElementById("imgContainer").style.display = "none";
+		document.getElementById("evalButton1").style.display = "none";
+		document.getElementById("evalButton2").style.display = "none";
+		document.getElementById("evalButton3").style.display = "none";
+		document.getElementById("finishedContainer").style.display = "block";
 		return;
 	}
 	document.getElementById("evalButton1").disabled = true;

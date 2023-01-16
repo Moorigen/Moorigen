@@ -22,7 +22,7 @@
 			<h1>Enter Matrk.Nr. here:</h1>
 			<input type="number" id="matrNrInput" style="font-size:24pt; width:98%">
 		</div>
-	<div class="img-layout-container" style="display:none;">
+	<div class="img-layout-container" id="imgContainer" style="display:none;">
 		<img class="img-layout-display" src="YEP.png" alt="YEP" id="img1" style="opacity:0%">
 		<img class="img-layout-display" src="YEP.png" alt="YEP" id="img2" style="opacity:0%">
 		<img class="img-layout-display" src="YEP.png" alt="YEP" id="img3" style="opacity:0%">
@@ -32,6 +32,9 @@
 		<button type="button" class="button-eval" id="evalButton1" onclick="startEval(1)">1</button>
 		<button type="button" class="button-eval" id="evalButton2" onclick="startEval(2)">2</button>
 		<button type="button" class="button-eval" id="evalButton3" onclick="startEval(3)">3</button>
+	</div>
+	<div class="img-layout-container" id="finishedContainer" style="display:none;">
+		<h1 style="text-align:center;font-size:36pt;">Thank you for your participation!</h1>
 	</div>
 	<br>
 	<br>
