@@ -184,19 +184,20 @@ async function startEval(vote) {
 }
 
 async function getRandomAYAYA() {
-	var data = $.ajax({
+	var data = await $.ajax({
         type: "GET",
         url: "dataset/index.txt",
         dataType: "text",
      });
+	console.log(data);
 	const dir = randomLineFromText(data);
-	console.log("double return now");
 	console.log(dir);
-	var data2 = $.ajax({
+	var data2 = await $.ajax({
 		type: "GET",
 		url: dir + "/index.txt",
 		dataType: "text",
 	});
+	console.log(data2);
 	const r = randomLineFromText(data2);
 	console.log(r);
 	return r
