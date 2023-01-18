@@ -188,12 +188,15 @@ function getRandomAYAYA() {
         dataType: "text",
         success: function(data) {
 			const dir = randomLineFromText(data);
+			console.log(dir);
 			$.ajax({
 				type: "GET",
 				url: dir + "/index.txt",
 				dataType: "text",
 				success: function(data2) {
-					return randomLineFromText(data2);
+					const r = randomLineFromText(data2);
+					console.log(r);
+					return r;
 				}
 			});
 		}
