@@ -160,6 +160,7 @@ async function startEval(vote) {
 	const path =  await getRandomAYAYA();
 	console.log("fetching: " + path);
 	document.getElementById(nops[evalStep]).src = path;
+	console.log("src: " + document.getElementById(nops[evalStep]).src);
 	document.getElementById("img1").style.opacity = "100%";
 	document.getElementById("img2").style.opacity = "100%";
 	document.getElementById("img3").style.opacity = "100%";
