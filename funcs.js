@@ -158,8 +158,9 @@ async function startEval(vote) {
 		button.disabled = true;
 	});
 	var path =  await getRandomAYAYA();
-	path = "dataset/bremerton_(azur_lane)/3911113.jpg";
-	path = path + "?" + new Date().getTime();
+	//path = "dataset/bremerton_(azur_lane)/3911113.jpg";
+	path = "NOP.png";
+	//path = path + "?" + new Date().getTime();
 	console.log("fetching: " + path);
 	//document.getElementById(nops[evalStep]).setAttribute("src", path);
 	document.getElementById("img1").setAttribute("src", path);
