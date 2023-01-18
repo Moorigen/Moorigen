@@ -189,9 +189,9 @@ async function getRandomAYAYA() {
         dataType: "text",
         success: function(data) {
 			const dir = randomLineFromText(data);
-			console.log("async now");
+			console.log("double return now");
 			console.log(dir);
-			$.ajax({
+			return $.ajax({
 				type: "GET",
 				url: dir + "/index.txt",
 				dataType: "text",
