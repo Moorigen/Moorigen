@@ -157,9 +157,7 @@ async function startEval(vote) {
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = true;
 	});
-	var path;
-	//path = await getRandomAYAYA();
-	path = "dataset/bremerton_(azur_lane)/3911113.jpg";
+	var path = await getRandomAYAYA();
 	//path = path + "?" + new Date().getTime();
 	console.log("fetching: " + path);
 	//document.getElementById(nops[evalStep]).setAttribute("src", path);
