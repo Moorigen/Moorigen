@@ -157,7 +157,7 @@ async function startEval(vote) {
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = true;
 	});
-	document.getElementById(nops[evalStep]).src = "NOP.png";
+	document.getElementById(nops[evalStep]).src = getRandomAYAYA();
 	document.getElementById("img1").style.opacity = "100%";
 	document.getElementById("img2").style.opacity = "100%";
 	document.getElementById("img3").style.opacity = "100%";
@@ -179,4 +179,32 @@ async function startEval(vote) {
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = false;
 	});
+}
+
+function getRandomAYAYA() {
+	$.ajax({
+        type: "GET",
+        url: "dataset/index.txt",
+        dataType: "text",
+        success: function(data) {
+			const dir = randomLineFromText(data);
+			$.ajax({
+				type: "GET",
+				url: dir + "/index.txt",
+				dataType: "text",
+				success: function(data2) {
+					return randomLineFromText(data2);
+				}
+			});
+		}
+     });
+}
+
+function randomLineFromText(text) {
+	const lines = text.split("\n");
+	var index = Math.floor(Math.random() * lines.length);
+	while(index >= lines.length) {
+		index--;
+	}
+	return lines[index];
 }
