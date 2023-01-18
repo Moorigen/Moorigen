@@ -208,11 +208,11 @@ namespace saoPrepTool {
                                 string root = Directory.GetParent(dv.path).FullName;
                                 string allFolders = "";
                                 foreach (string subFolder in Directory.EnumerateDirectories(dv.path)) {
-                                    allFolders += $"{subFolder.Remove(0, root.Length)}\n";
+                                    allFolders += $"{subFolder.Remove(0, root.Length + 1).Replace("\\", "/")}\n";
                                     using (FileStream fileOut = File.Open($"{subFolder}\\index.txt", FileMode.OpenOrCreate))
                                     using (TextWriter writer = new StreamWriter(fileOut)) {
                                         foreach (string fileName in Directory.EnumerateFiles(subFolder)) {
-                                            writer.WriteLine(fileName.Remove(0, root.Length));
+                                            writer.WriteLine(fileName.Remove(0, root.Length + 1).Replace("\\", "/"));
                                         }
                                     }
                                 }
