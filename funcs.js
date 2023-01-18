@@ -157,7 +157,7 @@ async function startEval(vote) {
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = true;
 	});
-	document.getElementById(nops[evalStep]).src = getRandomAYAYA();
+	document.getElementById(nops[evalStep]).src = await getRandomAYAYA();
 	document.getElementById("img1").style.opacity = "100%";
 	document.getElementById("img2").style.opacity = "100%";
 	document.getElementById("img3").style.opacity = "100%";
@@ -181,13 +181,14 @@ async function startEval(vote) {
 	});
 }
 
-function getRandomAYAYA() {
-	$.ajax({
+async function getRandomAYAYA() {
+	return $.ajax({
         type: "GET",
         url: "dataset/index.txt",
         dataType: "text",
         success: function(data) {
 			const dir = randomLineFromText(data);
+			console.log("async now");
 			console.log(dir);
 			$.ajax({
 				type: "GET",
@@ -196,7 +197,7 @@ function getRandomAYAYA() {
 				success: function(data2) {
 					const r = randomLineFromText(data2);
 					console.log(r);
-					return r;
+					return r
 				}
 			});
 		}
