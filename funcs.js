@@ -157,8 +157,9 @@ async function startEval(vote) {
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = true;
 	});
-	document.getElementById(nops[evalStep]).src = await getRandomAYAYA();
-	print("fetched: " + document.getElementById(nops[evalStep]).src);
+	const path =  await getRandomAYAYA();
+	print("fetching: " + path);
+	document.getElementById(nops[evalStep]).src = path;
 	document.getElementById("img1").style.opacity = "100%";
 	document.getElementById("img2").style.opacity = "100%";
 	document.getElementById("img3").style.opacity = "100%";
