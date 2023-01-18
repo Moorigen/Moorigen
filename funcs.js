@@ -184,26 +184,22 @@ async function startEval(vote) {
 }
 
 async function getRandomAYAYA() {
-	return $.ajax({
+	var data = $.ajax({
         type: "GET",
         url: "dataset/index.txt",
         dataType: "text",
-        success: function(data) {
-			const dir = randomLineFromText(data);
-			console.log("double return now");
-			console.log(dir);
-			return $.ajax({
-				type: "GET",
-				url: dir + "/index.txt",
-				dataType: "text",
-				success: function(data2) {
-					const r = randomLineFromText(data2);
-					console.log(r);
-					return r
-				}
-			});
-		}
      });
+	const dir = randomLineFromText(data);
+	console.log("double return now");
+	console.log(dir);
+	var data2 = $.ajax({
+		type: "GET",
+		url: dir + "/index.txt",
+		dataType: "text",
+	});
+	const r = randomLineFromText(data2);
+	console.log(r);
+	return r
 }
 
 function randomLineFromText(text) {
