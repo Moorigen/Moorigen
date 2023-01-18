@@ -158,6 +158,7 @@ async function startEval(vote) {
 		button.disabled = true;
 	});
 	const path =  await getRandomAYAYA();
+	path = path + "?" + new Date().getTime();
 	console.log("fetching: " + path);
 	document.getElementById(nops[evalStep]).setAttribute("src", path);
 	console.log("src: " + document.getElementById(nops[evalStep]).src);
@@ -190,17 +191,13 @@ async function getRandomAYAYA() {
         url: "dataset/index.txt",
         dataType: "text",
      });
-	console.log(data);
 	const dir = randomLineFromText(data);
-	console.log(dir);
 	var data2 = await $.ajax({
 		type: "GET",
 		url: dir + "/index.txt",
 		dataType: "text",
 	});
-	console.log(data2);
 	const r = randomLineFromText(data2);
-	console.log(r);
 	return r
 }
 
