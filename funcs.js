@@ -125,7 +125,7 @@ function webPost() {
 }
 
 var evalStep = 0;
-const nops = ["img1","img3","img2","img1","img1","img3"];
+const focusImages = ["img1","img3","img2","img1","img1","img3"];
 var votes = [];
 async function startEval(vote) {
 	if(evalStep == 0) {
@@ -148,7 +148,7 @@ async function startEval(vote) {
 		votes[evalStep - 1] = vote;
 		console.log(votes);
 	}
-	if(evalStep >= nops.length){
+	if(evalStep >= focusImages.length){
 		document.getElementById("imgContainer").style.display = "none";
 		document.getElementById("evalButtons").style.display = "none";
 		document.getElementById("finishedContainer").style.display = "block";
@@ -157,12 +157,18 @@ async function startEval(vote) {
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = true;
 	});
-	var path = await getRandomAYAYA();
-	//path = path + "?" + new Date().getTime();
-	console.log("fetching: " + path);
-	//document.getElementById(nops[evalStep]).setAttribute("src", path);
-	document.getElementById("img1").setAttribute("src", path);
-	console.log("src: " + document.getElementById(nops[evalStep]).src);
+	var path1 = await getRandomAYAYA();
+	var path2 = await getRandomAYAYA();
+	while (path2 == path1) {
+		path2 = await getRandomAYAYA();
+	}
+	var path3 = await getRandomAYAYA();
+	while (path3 == path1 || path3 == path2) {
+		path3 = await getRandomAYAYA();
+	}
+	document.getElementById("img1").setAttribute("src", path1);
+	document.getElementById("img2").setAttribute("src", path2);
+	document.getElementById("img3").setAttribute("src", path3);
 	document.getElementById("img1").style.opacity = "100%";
 	document.getElementById("img2").style.opacity = "100%";
 	document.getElementById("img3").style.opacity = "100%";
@@ -170,7 +176,7 @@ async function startEval(vote) {
 		setTimeout(function() {resolve("Delay")}, 2000);
 	});
 	await to;
-	document.getElementById(nops[evalStep]).style.border = "thick solid #FF0000";
+	document.getElementById(focusImages[evalStep]).style.border = "thick solid #FF0000";
 	to = new Promise(function(resolve) {
 		setTimeout(function() {resolve("Delay")}, 1000);
 	});
@@ -178,8 +184,10 @@ async function startEval(vote) {
 	document.getElementById("img1").style.opacity = "0%";
 	document.getElementById("img2").style.opacity = "0%";
 	document.getElementById("img3").style.opacity = "0%";
-	document.getElementById(nops[evalStep]).src = "YEP.png";
-	document.getElementById(nops[evalStep]).style.border = "thick solid #333333";
+	document.getElementById("img1").src = "YEP.png";
+	document.getElementById("img2").src = "YEP.png";
+	document.getElementById("img3").src = "YEP.png";
+	document.getElementById(focusImages[evalStep]).style.border = "thick solid #333333";
 	evalStep++;
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = false;
