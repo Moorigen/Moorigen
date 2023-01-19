@@ -73,4 +73,3 @@ dataset/lancer/371024.jpg
 dataset/lancer/595130.jpg
 dataset/lancer/66058.jpg
 dataset/lancer/915000.jpg
-dataset/lancer/index.txt

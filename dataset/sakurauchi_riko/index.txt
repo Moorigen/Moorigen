@@ -47,7 +47,6 @@ dataset/sakurauchi_riko/899b6c18f1c8464d0b75a452ee85f7e3.jpg
 dataset/sakurauchi_riko/9.jpg
 dataset/sakurauchi_riko/E38B7CB2-2EB0-4BCE-B371-6A5F133C7D58-600x600.jpg
 dataset/sakurauchi_riko/e9331a2a84935305b514cb007210f393974a5529_00.jpg
-dataset/sakurauchi_riko/index.txt
 dataset/sakurauchi_riko/maxresdefault.jpg
 dataset/sakurauchi_riko/Sakurauchi.jpg
 dataset/sakurauchi_riko/__sakurauchi_riko_and_takami_chika_love_live_and_1_more_drawn_by_kougi_hiroshi__sample-4acdd276e41babee83315cb8fa1c20d5.jpg

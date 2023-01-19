@@ -67,7 +67,6 @@ dataset/albedo/3954049.jpg
 dataset/albedo/3972007.jpg
 dataset/albedo/4050056.jpg
 dataset/albedo/4084032.jpg
-dataset/albedo/index.txt
 dataset/albedo/__albedo_overlord_drawn_by_cutesexyrobutts__sample-6324704d7455a0d922a84e1a784e18a1.jpg
 dataset/albedo/__albedo_overlord_drawn_by_hews__sample-ad335c9ed5b4db702ea2d6b9181c704c.jpg
 dataset/albedo/__albedo_overlord_drawn_by_hews__sample-c9c06faa573e80ed552d7d869d4a864f.jpg

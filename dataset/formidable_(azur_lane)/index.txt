@@ -73,4 +73,3 @@ dataset/formidable_(azur_lane)/4603097.jpg
 dataset/formidable_(azur_lane)/4677101.jpg
 dataset/formidable_(azur_lane)/4821095.jpg
 dataset/formidable_(azur_lane)/4823147.jpg
-dataset/formidable_(azur_lane)/index.txt

@@ -73,4 +73,3 @@ dataset/hirasawa_yui/79613050642.jpg
 dataset/hirasawa_yui/813002.jpg
 dataset/hirasawa_yui/814126.jpg
 dataset/hirasawa_yui/849110.jpg
-dataset/hirasawa_yui/index.txt

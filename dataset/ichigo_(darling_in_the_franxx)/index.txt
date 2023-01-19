@@ -67,7 +67,6 @@ dataset/ichigo_(darling_in_the_franxx)/Darling-in-the-Franxx-Ichigo-720x1280.jpg
 dataset/ichigo_(darling_in_the_franxx)/fa84b92e0ad84eda31053a17bde78a3c.jpg
 dataset/ichigo_(darling_in_the_franxx)/ichigo-darling-in-the-franxx-b286.jpg
 dataset/ichigo_(darling_in_the_franxx)/Ichigo.jpg
-dataset/ichigo_(darling_in_the_franxx)/index.txt
 dataset/ichigo_(darling_in_the_franxx)/__ichigo_darling_in_the_franxx_drawn_by_rei_rei_s_room__af5b0a28ba9d18297795327a38a63305.jpg
 dataset/ichigo_(darling_in_the_franxx)/__ichigo_darling_in_the_franxx_drawn_by_sbel02__sample-a1215cad88123c83e970584f3abc4b0d.jpg
 dataset/ichigo_(darling_in_the_franxx)/__ichigo_darling_in_the_franxx_drawn_by_seinen__31b4961dda988283dbb6f78f5a295c11.jpg

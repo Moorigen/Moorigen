@@ -73,4 +73,3 @@ dataset/keqing_(genshin_impact)/4691081.jpg
 dataset/keqing_(genshin_impact)/4703121.jpg
 dataset/keqing_(genshin_impact)/4748066.jpg
 dataset/keqing_(genshin_impact)/4750077.jpg
-dataset/keqing_(genshin_impact)/index.txt

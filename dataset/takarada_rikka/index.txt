@@ -73,4 +73,3 @@ dataset/takarada_rikka/4474014.jpg
 dataset/takarada_rikka/4783087.jpg
 dataset/takarada_rikka/4783089.jpg
 dataset/takarada_rikka/4783097.jpg
-dataset/takarada_rikka/index.txt

@@ -73,4 +73,3 @@ dataset/kamado_nezuko/4368094.jpg
 dataset/kamado_nezuko/4391047.jpg
 dataset/kamado_nezuko/4394006.jpg
 dataset/kamado_nezuko/4514109.jpg
-dataset/kamado_nezuko/index.txt

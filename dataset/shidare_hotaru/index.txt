@@ -73,4 +73,3 @@ dataset/shidare_hotaru/3659007.jpg
 dataset/shidare_hotaru/3730148.jpg
 dataset/shidare_hotaru/3797154.jpg
 dataset/shidare_hotaru/4117059.jpg
-dataset/shidare_hotaru/index.txt

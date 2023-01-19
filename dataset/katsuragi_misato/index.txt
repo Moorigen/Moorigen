@@ -63,7 +63,6 @@ dataset/katsuragi_misato/79484.jpg
 dataset/katsuragi_misato/908050.jpg
 dataset/katsuragi_misato/973126.jpg
 dataset/katsuragi_misato/download.jpg
-dataset/katsuragi_misato/index.txt
 dataset/katsuragi_misato/misato1-thum-1024x576.jpg
 dataset/katsuragi_misato/misato_katsuragi_vector_by_mrockz-d4z3sa6.jpg
 dataset/katsuragi_misato/portada_evangelion-41.jpg

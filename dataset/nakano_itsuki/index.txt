@@ -59,7 +59,6 @@ dataset/nakano_itsuki/4620137.jpg
 dataset/nakano_itsuki/4801108.jpg
 dataset/nakano_itsuki/67b154d7ded40ef92975f8ae4fceffc9.jpg
 dataset/nakano_itsuki/c6dcbceda93cfa6532b0c3a06b710c46.jpg
-dataset/nakano_itsuki/index.txt
 dataset/nakano_itsuki/Screenshot 2022-03-03 213428.jpg
 dataset/nakano_itsuki/Screenshot 2022-03-03 213444.jpg
 dataset/nakano_itsuki/Screenshot 2022-03-03 213457.jpg

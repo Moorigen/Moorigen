@@ -60,7 +60,6 @@ dataset/isshiki_iroha/ad393886b6f2131d12ce0ca1d5fa5d40.jpg
 dataset/isshiki_iroha/af51f936950a2189d977bb3afb272b6c.jpg
 dataset/isshiki_iroha/b2eca4d307d4b1edcd812022285e5353f6a3e87d_00.jpg
 dataset/isshiki_iroha/c62e91b335e35852740283f6b3cf6820.jpg
-dataset/isshiki_iroha/index.txt
 dataset/isshiki_iroha/iroha-banner.jpg
 dataset/isshiki_iroha/isshiki-iroha.jpg
 dataset/isshiki_iroha/Isshiki.jpg

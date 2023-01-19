@@ -70,7 +70,6 @@ dataset/yukinoshita_yukino/4733088.jpg
 dataset/yukinoshita_yukino/4804087.jpg
 dataset/yukinoshita_yukino/4813128.jpg
 dataset/yukinoshita_yukino/d6podi1-b2995281-f9d5-4850-92ba-865ee3e12cce.jpg
-dataset/yukinoshita_yukino/index.txt
 dataset/yukinoshita_yukino/wp6610814.jpg
 dataset/yukinoshita_yukino/Yahari Ore no Seishun Love Come wa Machigatteiru - Yukinoshita Yukino Render 5 [MG Renders].jpg
 dataset/yukinoshita_yukino/yukinoshita_yukino_render_by_nishikinoiqbal22_db530aq-pre.jpg

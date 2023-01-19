@@ -51,7 +51,6 @@ dataset/ram_rezero/4bc9345384b2a8aa40b904162b905084.jpg
 dataset/ram_rezero/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg
 dataset/ram_rezero/download.jpg
 dataset/ram_rezero/e4e515975c631079e6b362e83a4810959f525073_hq.jpg
-dataset/ram_rezero/index.txt
 dataset/ram_rezero/k407c2a7t3z11.jpg
 dataset/ram_rezero/Ram.jpg
 dataset/ram_rezero/Screenshot 2022-03-03 221736.jpg

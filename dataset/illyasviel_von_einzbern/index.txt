@@ -73,4 +73,3 @@ dataset/illyasviel_von_einzbern/4812032.jpg
 dataset/illyasviel_von_einzbern/606092.jpg
 dataset/illyasviel_von_einzbern/78041.jpg
 dataset/illyasviel_von_einzbern/99156.jpg
-dataset/illyasviel_von_einzbern/index.txt

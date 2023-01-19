@@ -58,7 +58,6 @@ dataset/miyazono_kawori/b5afee60adc973f79ee3ea8e99df8cc5.jpg
 dataset/miyazono_kawori/d8jib5f-8b91c26b-2821-467b-a0dc-3fb4e308294a.jpg
 dataset/miyazono_kawori/da8a7bf3d39317eeb4b700c54440975d.jpg
 dataset/miyazono_kawori/e39be12159bb8adf30028a2b1256b0b2.jpg
-dataset/miyazono_kawori/index.txt
 dataset/miyazono_kawori/Miyazono.jpg
 dataset/miyazono_kawori/Screenshot 2022-03-03 212913.jpg
 dataset/miyazono_kawori/sub2-1.jpg

@@ -73,4 +73,3 @@ dataset/arcueid_brunestud/922031.jpg
 dataset/arcueid_brunestud/928094.jpg
 dataset/arcueid_brunestud/986008.jpg
 dataset/arcueid_brunestud/986051.jpg
-dataset/arcueid_brunestud/index.txt

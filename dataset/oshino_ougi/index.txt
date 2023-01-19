@@ -58,7 +58,6 @@ dataset/oshino_ougi/a9f41374a1029224feb41b1bfa1ef953.jpg
 dataset/oshino_ougi/c82a2836b795c819fd3148bb057534b8.jpg
 dataset/oshino_ougi/d9dik99-aeaf57e0-6fb4-4f97-91f6-f18d009d6e80.jpg
 dataset/oshino_ougi/ed34597b7609ef0462258bbf02863a15.jpg
-dataset/oshino_ougi/index.txt
 dataset/oshino_ougi/maxresdefault.jpg
 dataset/oshino_ougi/Monogatari_Series_anime_girls_Oshino_Ougi-1206905.jpg
 dataset/oshino_ougi/Oshino.jpg

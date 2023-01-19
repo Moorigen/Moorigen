@@ -73,4 +73,3 @@ dataset/usada_pekora/4787055.jpg
 dataset/usada_pekora/4791105.jpg
 dataset/usada_pekora/4795027.jpg
 dataset/usada_pekora/4814029.jpg
-dataset/usada_pekora/index.txt

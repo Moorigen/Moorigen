@@ -62,7 +62,6 @@ dataset/nami_(one_piece)/avb2cc8ef34603bd9dafc.jpg
 dataset/nami_(one_piece)/dcn1nun-fa4b2507-b5d5-4809-9f5c-cacbf9798730.jpg
 dataset/nami_(one_piece)/ddr17ey-ad72be9c-38ff-408d-88ff-6a44e7273f58.jpg
 dataset/nami_(one_piece)/download (1).jpg
-dataset/nami_(one_piece)/index.txt
 dataset/nami_(one_piece)/nami_2_one_piece_episode_847_by_rosesaiyan_dcixzrg-pre.jpg
 dataset/nami_(one_piece)/nami_6_one_piece_episode_847_by_rosesaiyan-dcixzui.jpg
 dataset/nami_(one_piece)/nami_by_xxriddickxx-d4jjcbw.jpg

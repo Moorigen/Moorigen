@@ -47,7 +47,6 @@ dataset/fubuki_(one-punch_man)/4603130.jpg
 dataset/fubuki_(one-punch_man)/4631075.jpg
 dataset/fubuki_(one-punch_man)/4714035.jpg
 dataset/fubuki_(one-punch_man)/devushka-fubuki-vanpachmen-onepunch-man.jpg
-dataset/fubuki_(one-punch_man)/index.txt
 dataset/fubuki_(one-punch_man)/Jigoku.jpg
 dataset/fubuki_(one-punch_man)/__fubuki_and_saitama_one_punch_man_drawn_by_ban_bansankan__bf4f0e19a2180baa4990fee04f2b9151.jpg
 dataset/fubuki_(one-punch_man)/__fubuki_and_saitama_one_punch_man_drawn_by_lasterk__sample-8760784c331d6602e0a577148cbb4d65.jpg

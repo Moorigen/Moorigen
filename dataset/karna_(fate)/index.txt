@@ -72,5 +72,4 @@ dataset/karna_(fate)/d3f28f29c7ccfa09b4beffc4a0545795.jpg
 dataset/karna_(fate)/dafe6bbfbad763cbebcbe5e2e2082f1f.jpg
 dataset/karna_(fate)/f2e3de69b43aea291c5ceb0ea646a6a3.jpg
 dataset/karna_(fate)/fate_grand_order_karna_by_bleuwing-dbgor90.jpg
-dataset/karna_(fate)/index.txt
 dataset/karna_(fate)/karna___fate_grand_order_by_lataedelan_da3hdwm-fullview.jpg

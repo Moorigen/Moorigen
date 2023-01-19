@@ -56,7 +56,6 @@ dataset/ouro_kronii/4820104.jpg
 dataset/ouro_kronii/4821139.jpg
 dataset/ouro_kronii/4822030.jpg
 dataset/ouro_kronii/hqdefault.jpg
-dataset/ouro_kronii/index.txt
 dataset/ouro_kronii/maxresdefault.jpg
 dataset/ouro_kronii/ouro_pr-img_1.jpg
 dataset/ouro_kronii/Screenshot 2022-03-03 220843.jpg

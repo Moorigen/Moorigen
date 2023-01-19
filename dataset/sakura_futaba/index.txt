@@ -73,4 +73,3 @@ dataset/sakura_futaba/4636125136468.jpg
 dataset/sakura_futaba/4754014.jpg
 dataset/sakura_futaba/4754025.jpg
 dataset/sakura_futaba/63615076.jpg
-dataset/sakura_futaba/index.txt

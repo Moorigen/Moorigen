@@ -73,4 +73,3 @@ dataset/enterprise_(azur_lane)/4158148.jpg
 dataset/enterprise_(azur_lane)/4158149.jpg
 dataset/enterprise_(azur_lane)/4186087.jpg
 dataset/enterprise_(azur_lane)/4343030.jpg
-dataset/enterprise_(azur_lane)/index.txt

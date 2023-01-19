@@ -73,4 +73,3 @@ dataset/mash_kyrielight/4199110.jpg
 dataset/mash_kyrielight/4300086.jpg
 dataset/mash_kyrielight/4374016.jpg
 dataset/mash_kyrielight/4782142.jpg
-dataset/mash_kyrielight/index.txt

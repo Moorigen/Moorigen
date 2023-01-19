@@ -55,7 +55,6 @@ dataset/nico_robin/983094.jpg
 dataset/nico_robin/b8223d6d6d9d378dd2d613d3fcb11cbd6a3fa690_hq.jpg
 dataset/nico_robin/c55b158d084bd88c2ba84c6ac5879c15.jpg
 dataset/nico_robin/ff500e2370d1385b80093c5b98992fa6.jpg
-dataset/nico_robin/index.txt
 dataset/nico_robin/maxresdefault.jpg
 dataset/nico_robin/Nico.jpg
 dataset/nico_robin/Screenshot 2022-03-03 220043.jpg

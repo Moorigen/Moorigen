@@ -73,4 +73,3 @@ dataset/souryuu_asuka_langley/915133.jpg
 dataset/souryuu_asuka_langley/948094.jpg
 dataset/souryuu_asuka_langley/983108.jpg
 dataset/souryuu_asuka_langley/994101.jpg
-dataset/souryuu_asuka_langley/index.txt

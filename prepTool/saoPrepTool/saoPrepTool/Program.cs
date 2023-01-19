@@ -216,6 +216,7 @@ namespace saoPrepTool {
                                     using (FileStream fileOut = File.Open(filePath, FileMode.CreateNew))
                                     using (TextWriter writer = new StreamWriter(fileOut)) {
                                         foreach (string fileName in Directory.EnumerateFiles(subFolder)) {
+                                            if (fileName.Contains("index.txt")) continue;
                                             writer.WriteLine(fileName.Remove(0, root.Length + 1).Replace("\\", "/"));
                                         }
                                     }

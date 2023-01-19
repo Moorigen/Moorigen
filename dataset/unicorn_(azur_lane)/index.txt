@@ -73,4 +73,3 @@ dataset/unicorn_(azur_lane)/4094076.jpg
 dataset/unicorn_(azur_lane)/4400075.jpg
 dataset/unicorn_(azur_lane)/4408047.jpg
 dataset/unicorn_(azur_lane)/4555102.jpg
-dataset/unicorn_(azur_lane)/index.txt

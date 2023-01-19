@@ -66,7 +66,6 @@ dataset/suzuhara_lulu/4654149.jpg
 dataset/suzuhara_lulu/4654152.jpg
 dataset/suzuhara_lulu/4737140.jpg
 dataset/suzuhara_lulu/4815110.jpg
-dataset/suzuhara_lulu/index.txt
 dataset/suzuhara_lulu/Screenshot 2022-03-03 230520.jpg
 dataset/suzuhara_lulu/__suzuhara_lulu_nijisanji_drawn_by_fujisaki_hikari__sample-f737632ce02425f574feb811cde181e9.jpg
 dataset/suzuhara_lulu/__suzuhara_lulu_nijisanji_drawn_by_gen_black_factory__sample-cfc6d8f9474ec08464ec9aa3ba8af106.jpg

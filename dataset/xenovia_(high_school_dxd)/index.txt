@@ -39,7 +39,6 @@ dataset/xenovia_(high_school_dxd)/2405061.jpg
 dataset/xenovia_(high_school_dxd)/2434060.jpg
 dataset/xenovia_(high_school_dxd)/2714103.jpg
 dataset/xenovia_(high_school_dxd)/2911038.jpg
-dataset/xenovia_(high_school_dxd)/index.txt
 dataset/xenovia_(high_school_dxd)/__xenovia_quarta_and_asia_argento_high_school_dxd_and_2_more__93f8f0a937eca9d914e169f260340c6b.jpg
 dataset/xenovia_(high_school_dxd)/__xenovia_quarta_and_shidou_irina_high_school_dxd_and_1_more__61d5c6a5ed0be32421f9ee8234308d8e1033.jpg
 dataset/xenovia_(high_school_dxd)/__xenovia_quarta_and_toujou_koneko_high_school_dxd_and_1_more__4d4140694d2acd38112a2d7678549e83.jpg

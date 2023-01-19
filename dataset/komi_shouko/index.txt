@@ -57,7 +57,6 @@ dataset/komi_shouko/4796158.jpg
 dataset/komi_shouko/75abd1236aeeff31174a4541e3b448d2.jpg
 dataset/komi_shouko/b3d4df98808d726534bccf3d51e02ffd.jpg
 dataset/komi_shouko/bfd2a61f6746d49f8695e9df2ad9f8901620724970_main.jpg
-dataset/komi_shouko/index.txt
 dataset/komi_shouko/k3mi4djxxwv41.jpg
 dataset/komi_shouko/Komi.jpg
 dataset/komi_shouko/Komi.Shouko.600.2912439.jpg

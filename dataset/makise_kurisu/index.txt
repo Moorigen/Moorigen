@@ -73,4 +73,3 @@ dataset/makise_kurisu/985132.jpg
 dataset/makise_kurisu/985139.jpg
 dataset/makise_kurisu/986061.jpg
 dataset/makise_kurisu/993162.jpg
-dataset/makise_kurisu/index.txt

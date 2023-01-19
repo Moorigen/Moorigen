@@ -63,7 +63,6 @@ dataset/hanekawa_tsubasa/723133.jpg
 dataset/hanekawa_tsubasa/anime-monogatari-series-tsubasa-hanekawa-wallpaper-preview.jpg
 dataset/hanekawa_tsubasa/Hanekawa.jpg
 dataset/hanekawa_tsubasa/Hanekawa.Tsubasa.600.1330116.jpg
-dataset/hanekawa_tsubasa/index.txt
 dataset/hanekawa_tsubasa/Tsubasa_Hanekawa_render.jpg
 dataset/hanekawa_tsubasa/__hanekawa_tsubasa_monogatari_and_1_more_drawn_by_dootmoon__2ede77cbfba8ad3ca8e86d48bf1f15c8.jpg
 dataset/hanekawa_tsubasa/__hanekawa_tsubasa_monogatari_and_1_more_drawn_by_minakami_flyingman555__sample-2a11eb29afa2343f4556f62f892add42.jpg

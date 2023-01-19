@@ -73,4 +73,3 @@ dataset/toujou_nozomi/4425133.jpg
 dataset/toujou_nozomi/459003213884.jpg
 dataset/toujou_nozomi/459003213885.jpg
 dataset/toujou_nozomi/4751132.jpg
-dataset/toujou_nozomi/index.txt

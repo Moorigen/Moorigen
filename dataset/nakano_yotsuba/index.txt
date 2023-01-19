@@ -73,4 +73,3 @@ dataset/nakano_yotsuba/4708075.jpg
 dataset/nakano_yotsuba/4708076.jpg
 dataset/nakano_yotsuba/4714012.jpg
 dataset/nakano_yotsuba/4737076.jpg
-dataset/nakano_yotsuba/index.txt

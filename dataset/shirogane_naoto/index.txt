@@ -73,4 +73,3 @@ dataset/shirogane_naoto/831009.jpg
 dataset/shirogane_naoto/875002.jpg
 dataset/shirogane_naoto/882048.jpg
 dataset/shirogane_naoto/922148.jpg
-dataset/shirogane_naoto/index.txt

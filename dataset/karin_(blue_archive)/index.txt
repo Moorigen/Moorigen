@@ -41,7 +41,6 @@ dataset/karin_(blue_archive)/4821083.jpg
 dataset/karin_(blue_archive)/4821133.jpg
 dataset/karin_(blue_archive)/4823031.jpg
 dataset/karin_(blue_archive)/4824021.jpg
-dataset/karin_(blue_archive)/index.txt
 dataset/karin_(blue_archive)/__aqua_and_karin_blue_archive_and_1_more_drawn_by_hot_vr__sample-19a05e86a92c978669fb34de5f436910.jpg
 dataset/karin_(blue_archive)/__asuna_and_karin_blue_archive_drawn_by_agnamore__sample-483fb76b39790af3b752229cffbd4293.jpg
 dataset/karin_(blue_archive)/__asuna_and_karin_blue_archive_drawn_by_cle_masahiro__sample-fd6d35ecfbbf2540922f22ad76d11a3a.jpg

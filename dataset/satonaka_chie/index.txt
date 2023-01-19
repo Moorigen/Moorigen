@@ -73,4 +73,3 @@ dataset/satonaka_chie/591059.jpg
 dataset/satonaka_chie/765149.jpg
 dataset/satonaka_chie/767107.jpg
 dataset/satonaka_chie/923108.jpg
-dataset/satonaka_chie/index.txt

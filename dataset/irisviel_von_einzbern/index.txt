@@ -53,7 +53,6 @@ dataset/irisviel_von_einzbern/49355fa75ee6d8d1680c6a06c857515c7893f45f_hq.jpg
 dataset/irisviel_von_einzbern/8b3b916ee0d603d6e204160f8b799892.jpg
 dataset/irisviel_von_einzbern/a3d1bf8bead491a395241112e083a151.jpg
 dataset/irisviel_von_einzbern/f34fcc77ff2066ca0ff554c28060264ea57ecc5c_hq.jpg
-dataset/irisviel_von_einzbern/index.txt
 dataset/irisviel_von_einzbern/Irisviel-Von-Einzbern-AZFULT3uu-b.jpg
 dataset/irisviel_von_einzbern/irisviel-von-einzbern-fate-zero-1.jpg
 dataset/irisviel_von_einzbern/Irisviel.jpg

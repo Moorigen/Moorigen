@@ -67,7 +67,6 @@ dataset/platelet_(hataraku_saibou)/4405000.jpg
 dataset/platelet_(hataraku_saibou)/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg
 dataset/platelet_(hataraku_saibou)/c0c7a7e71071b62db7e2540056a63204.jpg
 dataset/platelet_(hataraku_saibou)/Hataraku Saibou - Platelet 01.jpg
-dataset/platelet_(hataraku_saibou)/index.txt
 dataset/platelet_(hataraku_saibou)/__platelet_hataraku_saibou_drawn_by_chaou__sample-7098dfdeb4e7ce6359865d0376084e25.jpg
 dataset/platelet_(hataraku_saibou)/__platelet_hataraku_saibou_drawn_by_cokio__0309fdd498195d7846d2c887d123c37d.jpg
 dataset/platelet_(hataraku_saibou)/__platelet_hataraku_saibou_drawn_by_greatmosu__sample-f0f8ed91511ea13633093cbfad2a9c6c.jpg

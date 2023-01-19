@@ -73,4 +73,3 @@ dataset/okita_souji_(fate)/2941061.jpg
 dataset/okita_souji_(fate)/2959028.jpg
 dataset/okita_souji_(fate)/2990156.jpg
 dataset/okita_souji_(fate)/2994020.jpg
-dataset/okita_souji_(fate)/index.txt

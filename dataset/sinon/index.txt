@@ -48,7 +48,6 @@ dataset/sinon/4722019.jpg
 dataset/sinon/4729006.jpg
 dataset/sinon/6hqdnyf6g6jepqcr3cwb4zutowuyix35_hq.jpg
 dataset/sinon/72467.jpg
-dataset/sinon/index.txt
 dataset/sinon/Screenshot 2022-03-03 224600.jpg
 dataset/sinon/sinon___ggo_by_littlehappypanda_d857li3-fullview.jpg
 dataset/sinon/unnamed.jpg

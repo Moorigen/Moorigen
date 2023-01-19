@@ -60,7 +60,6 @@ dataset/jonathan_joestar/9605facbe441c8d42d863f267a68a61be6d116f5r1-739-415v2_hq
 dataset/jonathan_joestar/c02904c6a9900b9e776d96607ab7d0f1.jpg
 dataset/jonathan_joestar/f1334b9e384aae695618adef3abe4e2a7f11e4e4_hq.jpg
 dataset/jonathan_joestar/hqdefault.jpg
-dataset/jonathan_joestar/index.txt
 dataset/jonathan_joestar/johnathan-joestar-allstarbattle.jpg
 dataset/jonathan_joestar/jonathan-joestar-foto.jpg
 dataset/jonathan_joestar/jonathan_joestar_by_sticklove-d8z8ab8.jpg

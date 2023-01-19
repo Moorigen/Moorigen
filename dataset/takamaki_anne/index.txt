@@ -60,7 +60,6 @@ dataset/takamaki_anne/ann-takamaki-persona-5-anime-0161.jpg
 dataset/takamaki_anne/ann-takamaki-persona-5-anime-1601.jpg
 dataset/takamaki_anne/Anne-Takamaki-2.jpg
 dataset/takamaki_anne/anne_takamaki_by_ro_arts-d9abrbz.jpg
-dataset/takamaki_anne/index.txt
 dataset/takamaki_anne/persona-5-ann-takamaki.jpg
 dataset/takamaki_anne/Screenshot 2022-03-03 231110.jpg
 dataset/takamaki_anne/Screenshot 2022-03-03 231124.jpg

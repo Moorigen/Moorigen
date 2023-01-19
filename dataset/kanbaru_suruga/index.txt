@@ -64,7 +64,6 @@ dataset/kanbaru_suruga/889127.jpg
 dataset/kanbaru_suruga/897135.jpg
 dataset/kanbaru_suruga/d8xcnah-4b99fd0d-d152-43cc-8114-08b979f7e25d.jpg
 dataset/kanbaru_suruga/df8a136a3018856ea1869e3fe415f01a.jpg
-dataset/kanbaru_suruga/index.txt
 dataset/kanbaru_suruga/Kanbaru.jpg
 dataset/kanbaru_suruga/Screenshot 2022-03-03 204606.jpg
 dataset/kanbaru_suruga/snapshot monkeys nisemonogatari kanbaru suruga 1920x1080 wallpaper_www.jpg

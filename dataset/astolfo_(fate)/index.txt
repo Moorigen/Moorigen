@@ -73,4 +73,3 @@ dataset/astolfo_(fate)/4279025.jpg
 dataset/astolfo_(fate)/4431108.jpg
 dataset/astolfo_(fate)/4575089.jpg
 dataset/astolfo_(fate)/4763135.jpg
-dataset/astolfo_(fate)/index.txt

@@ -73,4 +73,3 @@ dataset/gilgamesh/6908431768.jpg
 dataset/gilgamesh/69085.jpg
 dataset/gilgamesh/69086.jpg
 dataset/gilgamesh/69089.jpg
-dataset/gilgamesh/index.txt

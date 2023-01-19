@@ -57,7 +57,6 @@ dataset/st_ar-15_(girls_frontline)/4206057.jpg
 dataset/st_ar-15_(girls_frontline)/4239099.jpg
 dataset/st_ar-15_(girls_frontline)/42390993181.jpg
 dataset/st_ar-15_(girls_frontline)/db88dvq-00bb6f80-5183-4606-a36b-4e5260864708.jpg
-dataset/st_ar-15_(girls_frontline)/index.txt
 dataset/st_ar-15_(girls_frontline)/previewfile_958697725.jpg
 dataset/st_ar-15_(girls_frontline)/__st_ar_15_girls_frontline_drawn_by_act_xadachit__5b75afa56a07c0320bc5f8d719a9891e.jpg
 dataset/st_ar-15_(girls_frontline)/__st_ar_15_girls_frontline_drawn_by_act_xadachit__sample-5cad4de2e9e9510a5b52e0cee47efb3a.jpg

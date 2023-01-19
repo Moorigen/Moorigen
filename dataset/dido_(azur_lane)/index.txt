@@ -61,7 +61,6 @@ dataset/dido_(azur_lane)/4646040.jpg
 dataset/dido_(azur_lane)/4650104.jpg
 dataset/dido_(azur_lane)/4774025.jpg
 dataset/dido_(azur_lane)/4805099.jpg
-dataset/dido_(azur_lane)/index.txt
 dataset/dido_(azur_lane)/__dido_azur_lane_drawn_by_choyeon__sample-a3c3197f66735c4ba9e52919f19273ac.jpg
 dataset/dido_(azur_lane)/__dido_azur_lane_drawn_by_shirosaba__sample-e9ae641f2a8081695bd35623e25bb4b8.jpg
 dataset/dido_(azur_lane)/__dido_azur_lane_drawn_by_upanishi_mariko__sample-fa4cfd5222c879dcca77b4cdca2ee5fd.jpg

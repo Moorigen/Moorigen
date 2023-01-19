@@ -73,4 +73,3 @@ dataset/zero_two_(darling_in_the_franxx)/4170137.jpg
 dataset/zero_two_(darling_in_the_franxx)/4245025.jpg
 dataset/zero_two_(darling_in_the_franxx)/4577152.jpg
 dataset/zero_two_(darling_in_the_franxx)/4607002.jpg
-dataset/zero_two_(darling_in_the_franxx)/index.txt

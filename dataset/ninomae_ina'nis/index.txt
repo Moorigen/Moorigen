@@ -72,4 +72,3 @@ dataset/ninomae_ina'nis/4799093.jpg
 dataset/ninomae_ina'nis/4806119.jpg
 dataset/ninomae_ina'nis/4806125.jpg
 dataset/ninomae_ina'nis/4806134.jpg
-dataset/ninomae_ina'nis/index.txt

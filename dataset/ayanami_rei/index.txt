@@ -73,4 +73,3 @@ dataset/ayanami_rei/683119.jpg
 dataset/ayanami_rei/714041.jpg
 dataset/ayanami_rei/805050.jpg
 dataset/ayanami_rei/96607012799.jpg
-dataset/ayanami_rei/index.txt

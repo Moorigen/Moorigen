@@ -73,4 +73,3 @@ dataset/kiryu_coco/4657122.jpg
 dataset/kiryu_coco/469601082463.jpg
 dataset/kiryu_coco/4740018.jpg
 dataset/kiryu_coco/4759123.jpg
-dataset/kiryu_coco/index.txt

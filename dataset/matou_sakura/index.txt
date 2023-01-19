@@ -73,4 +73,3 @@ dataset/matou_sakura/4752029.jpg
 dataset/matou_sakura/4752031.jpg
 dataset/matou_sakura/4752034.jpg
 dataset/matou_sakura/50070.jpg
-dataset/matou_sakura/index.txt

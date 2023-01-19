@@ -53,7 +53,6 @@ dataset/yui_(angel_beats!)/887047.jpg
 dataset/yui_(angel_beats!)/890057.jpg
 dataset/yui_(angel_beats!)/968039.jpg
 dataset/yui_(angel_beats!)/d10adad334f8561240c6b4f75d4a3267.jpg
-dataset/yui_(angel_beats!)/index.txt
 dataset/yui_(angel_beats!)/maxresdefault.jpg
 dataset/yui_(angel_beats!)/Screenshot 2022-03-03 234507.jpg
 dataset/yui_(angel_beats!)/Screenshot 2022-03-03 234521.jpg

@@ -59,7 +59,6 @@ dataset/raphtalia/4817081.jpg
 dataset/raphtalia/97913c2128a5ea6516a76c4fc1312b09.jpg
 dataset/raphtalia/97913c2128a5ea6516a76c4fc1312b09686.jpg
 dataset/raphtalia/dd1c2gr-0d1463c5-98bb-458c-9147-f99051e64e22.jpg
-dataset/raphtalia/index.txt
 dataset/raphtalia/Screenshot 2022-03-03 222542.jpg
 dataset/raphtalia/Screenshot 2022-03-03 222611.jpg
 dataset/raphtalia/tumblr_pq6fujfEYA1wapghv_1280.jpg

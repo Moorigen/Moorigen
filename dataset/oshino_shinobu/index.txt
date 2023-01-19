@@ -73,4 +73,3 @@ dataset/oshino_shinobu/657008.jpg
 dataset/oshino_shinobu/697153.jpg
 dataset/oshino_shinobu/781113.jpg
 dataset/oshino_shinobu/949081.jpg
-dataset/oshino_shinobu/index.txt

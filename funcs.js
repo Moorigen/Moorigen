@@ -147,7 +147,7 @@ async function startEval(vote) {
 		evalStep = isNaN(evalStepCk) ? 0 : evalStepCk;
 	} else {
 		sessionStep++;
-		console.log(`${lastSeenImages}||{evalStep}|{sessionStep}|{focusImages[evalStep]}|{vote}`);
+		console.log(`${lastSeenImages}||${evalStep}|${sessionStep}|${focusImages[evalStep]}|${vote}`);
 	}
 	if(evalStep >= focusImages.length){
 		document.getElementById("imgContainer").style.display = "none";
@@ -170,7 +170,7 @@ async function startEval(vote) {
 	console.log(path1);
 	console.log(path2);
 	console.log(path3);
-	lastSeenImages = `${path1}|{path2}|{path3}`;
+	lastSeenImages = `${path1}|${path2}|${path3}`;
 	document.getElementById("img1").setAttribute("src", path1);
 	document.getElementById("img2").setAttribute("src", path2);
 	document.getElementById("img3").setAttribute("src", path3);

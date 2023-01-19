@@ -51,7 +51,6 @@ dataset/shuten_douji_(fate)/4786057.jpg
 dataset/shuten_douji_(fate)/4789135.jpg
 dataset/shuten_douji_(fate)/4811075.jpg
 dataset/shuten_douji_(fate)/4813031.jpg
-dataset/shuten_douji_(fate)/index.txt
 dataset/shuten_douji_(fate)/__shuten_douji_and_minamoto_no_raikou_fate_and_1_more_drawn_by_araneesama__14fdff2f1449fa292be0349a8b59017e.jpg
 dataset/shuten_douji_(fate)/__shuten_douji_and_shuten_douji_fate_and_1_more_drawn_by_freng__sample-6a1e51ff5d3bcde154f5583fff78bcb7.jpg
 dataset/shuten_douji_(fate)/__shuten_douji_and_shuten_douji_fate_and_1_more_drawn_by_haijin__8a43d2f07f3b12cbb8f85ae7240ddc40.jpg

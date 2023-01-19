@@ -73,4 +73,3 @@ dataset/rem_rezero/4627018.jpg
 dataset/rem_rezero/4635097.jpg
 dataset/rem_rezero/4654075.jpg
 dataset/rem_rezero/4668015.jpg
-dataset/rem_rezero/index.txt

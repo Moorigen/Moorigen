@@ -53,7 +53,6 @@ dataset/takagi-san/4514146.jpg
 dataset/takagi-san/4608004.jpg
 dataset/takagi-san/4689146.jpg
 dataset/takagi-san/4762128.jpg
-dataset/takagi-san/index.txt
 dataset/takagi-san/__takagi_san_karakai_jouzu_no_takagi_san_drawn_by_gotyou__c76c3e9566ec8f84f7eb7ff315e4a8c6.jpg
 dataset/takagi-san/__takagi_san_karakai_jouzu_no_takagi_san_drawn_by_hanabi_ocha__22853bd32af0d91361b0c2d79d4f41b0.jpg
 dataset/takagi-san/__takagi_san_karakai_jouzu_no_takagi_san_drawn_by_hews__sample-60fa3d34a7f26073704572fcb01074aa.jpg

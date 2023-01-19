@@ -51,7 +51,6 @@ dataset/semiramis_(fate)/4364137.jpg
 dataset/semiramis_(fate)/4374120.jpg
 dataset/semiramis_(fate)/4691006.jpg
 dataset/semiramis_(fate)/9ee4c47192b42285eb9994ae159ea4b85b5a059b_hq.jpg
-dataset/semiramis_(fate)/index.txt
 dataset/semiramis_(fate)/__fujimaru_ritsuka_and_semiramis_fate_and_2_more_drawn_by_puuzaki_puuna__dcc4e30126e6914ecc2eda861b529a92.jpg
 dataset/semiramis_(fate)/__semiramis_and_cleopatra_fate_and_2_more_drawn_by_club3__fc0220a7803e1c6f1e7e3d8f2ee9210c.jpg
 dataset/semiramis_(fate)/__semiramis_fate_and_1_more_drawn_by_moe_hamhamham__sample-1cd71c6cd4da6546a0c1a0b814320f77.jpg

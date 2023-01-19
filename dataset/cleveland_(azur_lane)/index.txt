@@ -41,7 +41,6 @@ dataset/cleveland_(azur_lane)/69958437.jpg
 dataset/cleveland_(azur_lane)/98f329c9ca861ffe2732d77de4a6a5de.jpg
 dataset/cleveland_(azur_lane)/Cleveland.jpg
 dataset/cleveland_(azur_lane)/fd092eb6dd633360b347b3ffc790d96599.jpg
-dataset/cleveland_(azur_lane)/index.txt
 dataset/cleveland_(azur_lane)/kelifulan_idol.jpg
 dataset/cleveland_(azur_lane)/__atago_formidable_taihou_akagi_kaga_and_7_more_azur_lane_drawn_by_piukute062__sample-fbf62e4df62551f176bbcee832c32b36104.jpg
 dataset/cleveland_(azur_lane)/__cleveland_akashi_hornet_and_cleveland_azur_lane_drawn_by_lilycious__sample-9e3107f10ac067df8ad4fda595dbfed8.jpg

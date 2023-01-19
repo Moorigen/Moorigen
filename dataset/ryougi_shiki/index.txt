@@ -73,4 +73,3 @@ dataset/ryougi_shiki/832118.jpg
 dataset/ryougi_shiki/858099.jpg
 dataset/ryougi_shiki/871115.jpg
 dataset/ryougi_shiki/976107.jpg
-dataset/ryougi_shiki/index.txt

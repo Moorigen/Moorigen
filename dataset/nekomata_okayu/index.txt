@@ -73,4 +73,3 @@ dataset/nekomata_okayu/4757136.jpg
 dataset/nekomata_okayu/4765136.jpg
 dataset/nekomata_okayu/4787053.jpg
 dataset/nekomata_okayu/4809007.jpg
-dataset/nekomata_okayu/index.txt

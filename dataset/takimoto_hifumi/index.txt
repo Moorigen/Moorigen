@@ -40,7 +40,6 @@ dataset/takimoto_hifumi/dbggjv4-9dfd102c-eb99-4297-a285-7321c2f90d54.jpg
 dataset/takimoto_hifumi/def2fd890fa11af6e506ea5ba2192ef2907d19a3_hq.jpg
 dataset/takimoto_hifumi/Hifumi-Takimoto-new-game-banner-1.jpg
 dataset/takimoto_hifumi/hifumi_takimoto___new_game___by_shibuyawarrior-dbiesz7.jpg
-dataset/takimoto_hifumi/index.txt
 dataset/takimoto_hifumi/new game 04.jpg
 dataset/takimoto_hifumi/New Game Takimoto Hifumi Mega Cute Fashion Ep2 Render 4.jpg
 dataset/takimoto_hifumi/New Game Takimoto Hifumi Mega Cute Fashion Ep2 Render 8.jpg

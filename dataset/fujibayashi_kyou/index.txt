@@ -73,4 +73,3 @@ dataset/fujibayashi_kyou/face_750_295_119.jpg
 dataset/fujibayashi_kyou/face_76_650_85.jpg
 dataset/fujibayashi_kyou/face_77_77_3.jpg
 dataset/fujibayashi_kyou/face_996_249_15.jpg
-dataset/fujibayashi_kyou/index.txt

@@ -73,4 +73,3 @@ dataset/belfast_(azur_lane)/4616028.jpg
 dataset/belfast_(azur_lane)/4616044.jpg
 dataset/belfast_(azur_lane)/4630002.jpg
 dataset/belfast_(azur_lane)/4807133.jpg
-dataset/belfast_(azur_lane)/index.txt

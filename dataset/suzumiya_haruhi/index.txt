@@ -73,4 +73,3 @@ dataset/suzumiya_haruhi/84095.jpg
 dataset/suzumiya_haruhi/87118.jpg
 dataset/suzumiya_haruhi/906070.jpg
 dataset/suzumiya_haruhi/986013.jpg
-dataset/suzumiya_haruhi/index.txt

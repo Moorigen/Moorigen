@@ -62,7 +62,6 @@ dataset/hyuuga_hinata/Hinata006.jpg
 dataset/hyuuga_hinata/Hyuuga.Hinata.600.169752.jpg
 dataset/hyuuga_hinata/Hyuuga.jpg
 dataset/hyuuga_hinata/hyuuga_hinata_by_dyamondarts_dbvmyt1-pre.jpg
-dataset/hyuuga_hinata/index.txt
 dataset/hyuuga_hinata/tumblr_owcf9mdKFb1wydck6o2_400.jpg
 dataset/hyuuga_hinata/tumblr_p3pdkvL1hZ1x0gtqfo1_500.jpg
 dataset/hyuuga_hinata/__hyuuga_hinata_naruto_and_1_more_drawn_by_afrobull__f4c37e5776517758034bebd7c6bfefd6.jpg

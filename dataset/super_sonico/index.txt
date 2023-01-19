@@ -73,4 +73,3 @@ dataset/super_sonico/4190128.jpg
 dataset/super_sonico/4810135.jpg
 dataset/super_sonico/990108.jpg
 dataset/super_sonico/991118.jpg
-dataset/super_sonico/index.txt

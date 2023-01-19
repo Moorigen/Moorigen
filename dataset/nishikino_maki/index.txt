@@ -73,4 +73,3 @@ dataset/nishikino_maki/4664009.jpg
 dataset/nishikino_maki/6.jpg
 dataset/nishikino_maki/7.jpg
 dataset/nishikino_maki/964142.jpg
-dataset/nishikino_maki/index.txt

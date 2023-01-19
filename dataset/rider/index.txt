@@ -73,4 +73,3 @@ dataset/rider/69060.jpg
 dataset/rider/734044.jpg
 dataset/rider/845015.jpg
 dataset/rider/971106.jpg
-dataset/rider/index.txt

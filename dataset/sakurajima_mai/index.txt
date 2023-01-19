@@ -73,4 +73,3 @@ dataset/sakurajima_mai/4619055.jpg
 dataset/sakurajima_mai/4619055136183.jpg
 dataset/sakurajima_mai/4699133.jpg
 dataset/sakurajima_mai/4699140.jpg
-dataset/sakurajima_mai/index.txt

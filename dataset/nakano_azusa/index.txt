@@ -73,4 +73,3 @@ dataset/nakano_azusa/925000.jpg
 dataset/nakano_azusa/938030.jpg
 dataset/nakano_azusa/938055.jpg
 dataset/nakano_azusa/945057.jpg
-dataset/nakano_azusa/index.txt

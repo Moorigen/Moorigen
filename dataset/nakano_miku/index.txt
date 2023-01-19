@@ -73,4 +73,3 @@ dataset/nakano_miku/4642096.jpg
 dataset/nakano_miku/4731150.jpg
 dataset/nakano_miku/4746024.jpg
 dataset/nakano_miku/4801103.jpg
-dataset/nakano_miku/index.txt

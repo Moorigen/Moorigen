@@ -73,4 +73,3 @@ dataset/aegis_(persona)/896030.jpg
 dataset/aegis_(persona)/898009.jpg
 dataset/aegis_(persona)/912065.jpg
 dataset/aegis_(persona)/931137.jpg
-dataset/aegis_(persona)/index.txt

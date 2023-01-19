@@ -64,7 +64,6 @@ dataset/paimon_(genshin_impact)/7742dfe8422a482cf38594e90ad0fbc4_666799794918216
 dataset/paimon_(genshin_impact)/874d8b7822a3fcacd92a36611474e2eb.jpg
 dataset/paimon_(genshin_impact)/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg
 dataset/paimon_(genshin_impact)/fe33324823b15bbdf51873065b453784_1111154943076719560.jpg
-dataset/paimon_(genshin_impact)/index.txt
 dataset/paimon_(genshin_impact)/Paimon.jpg
 dataset/paimon_(genshin_impact)/PaimonThingsDontMakeSense.jpg
 dataset/paimon_(genshin_impact)/Screenshot 2022-03-03 221155.jpg

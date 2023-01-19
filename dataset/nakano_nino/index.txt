@@ -73,4 +73,3 @@ dataset/nakano_nino/4704111.jpg
 dataset/nakano_nino/4754052.jpg
 dataset/nakano_nino/4758030.jpg
 dataset/nakano_nino/4780000.jpg
-dataset/nakano_nino/index.txt
