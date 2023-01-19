@@ -135,7 +135,7 @@ async function startEval(vote) {
 		sessionStep++;
 		console.log(`${lastSeenImages}||${evalStep}|${sessionStep}|${lastFocusedImg}|${vote}`);
 	}
-	if(evalStep + sessionStep >= maxVotes){
+	if(evalStep >= maxVotes){
 		document.getElementById("imgContainer").style.display = "none";
 		document.getElementById("evalButtons").style.display = "none";
 		document.getElementById("finishedContainer").style.display = "block";
@@ -189,13 +189,19 @@ async function getRandomAYAYA() {
         url: "dataset/index.txt",
         dataType: "text",
      });
-	const dir = randomLineFromText(data);
+	var dir = randomLineFromText(data);
+	while(dir.length < 3) {
+		dir = randomLineFromText(data);
+	} 
 	var data2 = await $.ajax({
 		type: "GET",
 		url: dir + "/index.txt",
 		dataType: "text",
 	});
-	const r = randomLineFromText(data2);
+	var r = randomLineFromText(data2);
+	while(r.length < 3) {
+		r = randomLineFromText(data2);
+	}
 	return r
 }
 
