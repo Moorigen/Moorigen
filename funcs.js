@@ -134,11 +134,11 @@ async function startEval(vote) {
 		button.disabled = true;
 	});
 	var path1 = await getRandomAYAYA();
-	var path2 = await getRandomAYAYA(samePersonMode ? path[1] : "");
+	var path2 = await getRandomAYAYA(samePersonMode ? path1[1] : "");
 	while ((path2[1] == path1[1]) && !samePersonMode) {
 		path2 = await getRandomAYAYA();
 	}
-	var path3 = await getRandomAYAYA(samePersonMode ? path[1] : "");
+	var path3 = await getRandomAYAYA(samePersonMode ? path1[1] : "");
 	while ((path3[1] == path1[1] || path3[1] == path2[1]) && !samePersonMode) {
 		path3 = await getRandomAYAYA();
 	}
