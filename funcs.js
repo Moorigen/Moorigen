@@ -168,7 +168,7 @@ async function startEval(vote) {
 		path3 = await getRandomAYAYA();
 	}
 	console.log(path1);
-	console.log(path2;
+	console.log(path2);
 	console.log(path3);
 	lastSeenImages = `${path1}|{path2}|{path3}`;
 	document.getElementById("img1").setAttribute("src", path1);
