@@ -92,6 +92,11 @@ function webPost() {
 	});
 }
 
+var samePersonMode = false;
+function modeSwap() {
+	samePersonMode = !samePersonMode;
+	document.getElementById("samePersonSwapButton").innerHTML = samePersonMode ? "different people" : "same person";
+}
 
 const maxVotes = 15;
 var evalStep = 0;
@@ -129,12 +134,12 @@ async function startEval(vote) {
 		button.disabled = true;
 	});
 	var path1 = await getRandomAYAYA();
-	var path2 = await getRandomAYAYA();
-	while (path2[1] == path1[1]) {
+	var path2 = await getRandomAYAYA(samePersonMode ? path[1] : "");
+	while ((path2[1] == path1[1]) && !samePersonMode) {
 		path2 = await getRandomAYAYA();
 	}
-	var path3 = await getRandomAYAYA();
-	while ((path3[1] == path1[1] || path3[1] == path2[1])) {
+	var path3 = await getRandomAYAYA(samePersonMode ? path[1] : "");
+	while ((path3[1] == path1[1] || path3[1] == path2[1]) && !samePersonMode) {
 		path3 = await getRandomAYAYA();
 	}
 	lastSeenImages = `${path1[0]}|${path2[0]}|${path3[0]}`;
@@ -176,17 +181,20 @@ const errorReturns = [
 	["dataset/asuna_(sao)/2114129.jpg", "dataset/asuna_(sao)"], 
 	["dataset/sinon/3809115.jpg", "dataset/sinon"]];
 var errorIndex = 0;
-async function getRandomAYAYA() {
+async function getRandomAYAYA(dir = "") {
 	try{
-		var data = await $.ajax({
+		if (dir == "") {
+			var data = await $.ajax({
 			type: "GET",
 			url: "dataset/index.txt",
 			dataType: "text",
-		});
-		var dir = randomLineFromText(data);
-		while(dir.length < 3) {
-			dir = randomLineFromText(data);
-		} 
+			});
+			var dir = randomLineFromText(data);
+			while(dir.length < 3) {
+				dir = randomLineFromText(data);
+			} 
+		}
+		
 		var data2 = await $.ajax({
 			type: "GET",
 			url: dir + "/index.txt",
