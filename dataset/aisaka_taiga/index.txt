@@ -74,6 +74,3 @@ dataset/aisaka_taiga/833159.jpg
 dataset/aisaka_taiga/884129.jpg
 dataset/aisaka_taiga/933015.jpg
 dataset/aisaka_taiga/index.txt
-129.jpg
-\dataset\aisaka_taiga\933015.jpg
-\dataset\aisaka_taiga\index.txt

@@ -74,6 +74,3 @@ dataset/kaname_madoka/974061.jpg
 dataset/kaname_madoka/976085.jpg
 dataset/kaname_madoka/979134.jpg
 dataset/kaname_madoka/index.txt
-5.jpg
-\dataset\kaname_madoka\979134.jpg
-\dataset\kaname_madoka\index.txt

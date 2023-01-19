@@ -69,5 +69,3 @@ dataset/jonathan_joestar/unnamed (1).jpg
 dataset/jonathan_joestar/unnamed (3).jpg
 dataset/jonathan_joestar/unnamed.jpg
 dataset/jonathan_joestar/wp5575848.jpg
-jonathan_joestar\unnamed.jpg
-\dataset\jonathan_joestar\wp5575848.jpg

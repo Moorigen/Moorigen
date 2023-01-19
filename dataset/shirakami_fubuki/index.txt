@@ -74,5 +74,3 @@ dataset/shirakami_fubuki/4742109.jpg
 dataset/shirakami_fubuki/4791140.jpg
 dataset/shirakami_fubuki/4793037.jpg
 dataset/shirakami_fubuki/index.txt
-\dataset\shirakami_fubuki\4793037.jpg
-\dataset\shirakami_fubuki\index.txt

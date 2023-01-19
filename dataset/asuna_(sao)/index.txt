@@ -74,6 +74,3 @@ dataset/asuna_(sao)/4544095.jpg
 dataset/asuna_(sao)/4820087.jpg
 dataset/asuna_(sao)/666153.jpg
 dataset/asuna_(sao)/index.txt
-20087.jpg
-\dataset\asuna_(sao)\666153.jpg
-\dataset\asuna_(sao)\index.txt

@@ -74,6 +74,3 @@ dataset/minato_aqua/4718105.jpg
 dataset/minato_aqua/4718106.jpg
 dataset/minato_aqua/4762029.jpg
 dataset/minato_aqua/index.txt
-8106.jpg
-\dataset\minato_aqua\4762029.jpg
-\dataset\minato_aqua\index.txt

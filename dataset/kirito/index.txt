@@ -74,6 +74,3 @@ dataset/kirito/3770070.jpg
 dataset/kirito/4217136.jpg
 dataset/kirito/4217137.jpg
 dataset/kirito/index.txt
-kirito\4217136.jpg
-\dataset\kirito\4217137.jpg
-\dataset\kirito\index.txt

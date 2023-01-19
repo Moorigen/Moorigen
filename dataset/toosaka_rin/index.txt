@@ -74,6 +74,3 @@ dataset/toosaka_rin/78048.jpg
 dataset/toosaka_rin/875113.jpg
 dataset/toosaka_rin/980065.jpg
 dataset/toosaka_rin/index.txt
-75113.jpg
-\dataset\toosaka_rin\980065.jpg
-\dataset\toosaka_rin\index.txt

@@ -74,6 +74,3 @@ dataset/fujiwara_chika/4578097.jpg
 dataset/fujiwara_chika/4602118.jpg
 dataset/fujiwara_chika/4766161.jpg
 dataset/fujiwara_chika/index.txt
-pg
-\dataset\fujiwara_chika\4766161.jpg
-\dataset\fujiwara_chika\index.txt

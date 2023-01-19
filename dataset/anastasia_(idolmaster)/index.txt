@@ -74,5 +74,3 @@ dataset/anastasia_(idolmaster)/4758049.jpg
 dataset/anastasia_(idolmaster)/47580497987.jpg
 dataset/anastasia_(idolmaster)/4796105.jpg
 dataset/anastasia_(idolmaster)/index.txt
-stasia_(idolmaster)\4796105.jpg
-\dataset\anastasia_(idolmaster)\index.txt

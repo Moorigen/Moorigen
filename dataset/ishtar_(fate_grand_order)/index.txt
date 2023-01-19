@@ -74,5 +74,3 @@ dataset/ishtar_(fate_grand_order)/3345032.jpg
 dataset/ishtar_(fate_grand_order)/3355069.jpg
 dataset/ishtar_(fate_grand_order)/3362069.jpg
 dataset/ishtar_(fate_grand_order)/index.txt
-ate_grand_order)\3362069.jpg
-\dataset\ishtar_(fate_grand_order)\index.txt

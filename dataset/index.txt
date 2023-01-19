@@ -128,8 +128,3 @@ dataset/yuigahama_yui
 dataset/yui_(angel_beats!)
 dataset/yukinoshita_yukino
 dataset/zero_two_(darling_in_the_franxx)
-ool_dxd)
-\dataset\yuigahama_yui
-\dataset\yui_(angel_beats!)
-\dataset\yukinoshita_yukino
-\dataset\zero_two_(darling_in_the_franxx)

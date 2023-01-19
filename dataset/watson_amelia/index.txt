@@ -74,6 +74,3 @@ dataset/watson_amelia/4735032.jpg
 dataset/watson_amelia/4736009.jpg
 dataset/watson_amelia/4819085.jpg
 dataset/watson_amelia/index.txt
-.jpg
-\dataset\watson_amelia\4819085.jpg
-\dataset\watson_amelia\index.txt

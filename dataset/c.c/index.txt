@@ -74,7 +74,3 @@ dataset/c.c/636094.jpg
 dataset/c.c/693009.jpg
 dataset/c.c/87103.jpg
 dataset/c.c/index.txt
-g
-\dataset\c.c\693009.jpg
-\dataset\c.c\87103.jpg
-\dataset\c.c\index.txt

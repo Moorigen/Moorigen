@@ -74,5 +74,3 @@ dataset/furukawa_nagisa/face_83_111_82.jpg
 dataset/furukawa_nagisa/face_940_196_100.jpg
 dataset/furukawa_nagisa/face_946_174_136.jpg
 dataset/furukawa_nagisa/index.txt
-t\furukawa_nagisa\face_946_174_136.jpg
-\dataset\furukawa_nagisa\index.txt

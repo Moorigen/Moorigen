@@ -74,6 +74,3 @@ dataset/mei_(pokemon)/3723021.jpg
 dataset/mei_(pokemon)/3734066.jpg
 dataset/mei_(pokemon)/3736052.jpg
 dataset/mei_(pokemon)/index.txt
-.jpg
-\dataset\mei_(pokemon)\3736052.jpg
-\dataset\mei_(pokemon)\index.txt

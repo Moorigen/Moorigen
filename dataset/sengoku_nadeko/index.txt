@@ -74,6 +74,3 @@ dataset/sengoku_nadeko/863044.jpg
 dataset/sengoku_nadeko/870086.jpg
 dataset/sengoku_nadeko/972093.jpg
 dataset/sengoku_nadeko/index.txt
-jpg
-\dataset\sengoku_nadeko\972093.jpg
-\dataset\sengoku_nadeko\index.txt

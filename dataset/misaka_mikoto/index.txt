@@ -74,6 +74,3 @@ dataset/misaka_mikoto/851115.jpg
 dataset/misaka_mikoto/913138.jpg
 dataset/misaka_mikoto/985118.jpg
 dataset/misaka_mikoto/index.txt
-8.jpg
-\dataset\misaka_mikoto\985118.jpg
-\dataset\misaka_mikoto\index.txt

@@ -74,6 +74,3 @@ dataset/gawr_gura/4821109.jpg
 dataset/gawr_gura/4821149.jpg
 dataset/gawr_gura/4822101.jpg
 dataset/gawr_gura/index.txt
-\4821149.jpg
-\dataset\gawr_gura\4822101.jpg
-\dataset\gawr_gura\index.txt

@@ -74,6 +74,3 @@ dataset/hatsune_miku/face_326_130_21.jpg
 dataset/hatsune_miku/face_563_56_31.jpg
 dataset/hatsune_miku/face_93_104_36.jpg
 dataset/hatsune_miku/index.txt
-
-\dataset\hatsune_miku\face_93_104_36.jpg
-\dataset\hatsune_miku\index.txt

@@ -74,6 +74,3 @@ dataset/kochou_shinobu/4518042.jpg
 dataset/kochou_shinobu/4600160.jpg
 dataset/kochou_shinobu/4733085.jpg
 dataset/kochou_shinobu/index.txt
-pg
-\dataset\kochou_shinobu\4733085.jpg
-\dataset\kochou_shinobu\index.txt

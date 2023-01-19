@@ -74,6 +74,3 @@ dataset/kizuna_ai/3640068.jpg
 dataset/kizuna_ai/3649141.jpg
 dataset/kizuna_ai/3776018.jpg
 dataset/kizuna_ai/index.txt
-\3649141.jpg
-\dataset\kizuna_ai\3776018.jpg
-\dataset\kizuna_ai\index.txt

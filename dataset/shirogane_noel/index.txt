@@ -74,6 +74,3 @@ dataset/shirogane_noel/4795025.jpg
 dataset/shirogane_noel/4795122.jpg
 dataset/shirogane_noel/4820006.jpg
 dataset/shirogane_noel/index.txt
-pg
-\dataset\shirogane_noel\4820006.jpg
-\dataset\shirogane_noel\index.txt

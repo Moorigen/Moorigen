@@ -71,5 +71,3 @@ dataset/paimon_(genshin_impact)/Screenshot 2022-03-03 221155.jpg
 dataset/paimon_(genshin_impact)/Screenshot 2022-03-03 221215.jpg
 dataset/paimon_(genshin_impact)/Screenshot 2022-03-03 221227.jpg
 dataset/paimon_(genshin_impact)/z1032esteet51.jpg
-22-03-03 221227.jpg
-\dataset\paimon_(genshin_impact)\z1032esteet51.jpg

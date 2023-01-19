@@ -74,5 +74,3 @@ dataset/waver_velvet/3778137.jpg
 dataset/waver_velvet/index.txt
 dataset/waver_velvet/waver-velvet-592.jpg
 dataset/waver_velvet/Waver_Velvet_Determined.jpg
-et\waver-velvet-592.jpg
-\dataset\waver_velvet\Waver_Velvet_Determined.jpg

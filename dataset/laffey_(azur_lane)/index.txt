@@ -74,5 +74,3 @@ dataset/laffey_(azur_lane)/4537102.jpg
 dataset/laffey_(azur_lane)/4569135.jpg
 dataset/laffey_(azur_lane)/4820102.jpg
 dataset/laffey_(azur_lane)/index.txt
-aset\laffey_(azur_lane)\4820102.jpg
-\dataset\laffey_(azur_lane)\index.txt

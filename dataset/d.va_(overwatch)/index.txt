@@ -74,5 +74,3 @@ dataset/d.va_(overwatch)/3941135.jpg
 dataset/d.va_(overwatch)/4459030.jpg
 dataset/d.va_(overwatch)/4489163.jpg
 dataset/d.va_(overwatch)/index.txt
-\dataset\d.va_(overwatch)\4489163.jpg
-\dataset\d.va_(overwatch)\index.txt

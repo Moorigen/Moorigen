@@ -74,5 +74,3 @@ dataset/atago_(azur_lane)/4441084.jpg
 dataset/atago_(azur_lane)/4696048.jpg
 dataset/atago_(azur_lane)/4823044.jpg
 dataset/atago_(azur_lane)/index.txt
-ataset\atago_(azur_lane)\4823044.jpg
-\dataset\atago_(azur_lane)\index.txt

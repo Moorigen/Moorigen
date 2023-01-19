@@ -74,6 +74,3 @@ dataset/yuigahama_yui/4496134.jpg
 dataset/yuigahama_yui/4704010.jpg
 dataset/yuigahama_yui/4788090.jpg
 dataset/yuigahama_yui/index.txt
-.jpg
-\dataset\yuigahama_yui\4788090.jpg
-\dataset\yuigahama_yui\index.txt

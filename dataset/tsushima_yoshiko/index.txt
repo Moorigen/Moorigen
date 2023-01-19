@@ -74,5 +74,3 @@ dataset/tsushima_yoshiko/4529162.jpg
 dataset/tsushima_yoshiko/4636109.jpg
 dataset/tsushima_yoshiko/4636122.jpg
 dataset/tsushima_yoshiko/index.txt
-\dataset\tsushima_yoshiko\4636122.jpg
-\dataset\tsushima_yoshiko\index.txt

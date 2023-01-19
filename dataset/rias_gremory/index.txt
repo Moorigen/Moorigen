@@ -74,6 +74,3 @@ dataset/rias_gremory/4669022.jpg
 dataset/rias_gremory/4669086.jpg
 dataset/rias_gremory/4669092.jpg
 dataset/rias_gremory/index.txt
-86.jpg
-\dataset\rias_gremory\4669092.jpg
-\dataset\rias_gremory\index.txt

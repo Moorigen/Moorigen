@@ -74,6 +74,3 @@ dataset/shishiro_botan/4813095.jpg
 dataset/shishiro_botan/4816165.jpg
 dataset/shishiro_botan/4817133.jpg
 dataset/shishiro_botan/index.txt
-pg
-\dataset\shishiro_botan\4817133.jpg
-\dataset\shishiro_botan\index.txt

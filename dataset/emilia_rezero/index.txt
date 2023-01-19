@@ -74,6 +74,3 @@ dataset/emilia_rezero/4708099.jpg
 dataset/emilia_rezero/4708107.jpg
 dataset/emilia_rezero/470810722501.jpg
 dataset/emilia_rezero/index.txt
-
-\dataset\emilia_rezero\470810722501.jpg
-\dataset\emilia_rezero\index.txt

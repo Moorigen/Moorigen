@@ -74,5 +74,3 @@ dataset/abigail_williams_(fate)/4797027.jpg
 dataset/abigail_williams_(fate)/4797028.jpg
 dataset/abigail_williams_(fate)/4821077.jpg
 dataset/abigail_williams_(fate)/index.txt
-il_williams_(fate)\4821077.jpg
-\dataset\abigail_williams_(fate)\index.txt

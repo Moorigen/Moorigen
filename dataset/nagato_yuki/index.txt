@@ -74,6 +74,3 @@ dataset/nagato_yuki/928095.jpg
 dataset/nagato_yuki/966004.jpg
 dataset/nagato_yuki/98054.jpg
 dataset/nagato_yuki/index.txt
-966004.jpg
-\dataset\nagato_yuki\98054.jpg
-\dataset\nagato_yuki\index.txt

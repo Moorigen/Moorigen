@@ -74,5 +74,3 @@ dataset/senjougahara_hitagi/950009.jpg
 dataset/senjougahara_hitagi/958160.jpg
 dataset/senjougahara_hitagi/981077.jpg
 dataset/senjougahara_hitagi/index.txt
-set\senjougahara_hitagi\981077.jpg
-\dataset\senjougahara_hitagi\index.txt

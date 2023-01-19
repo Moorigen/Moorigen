@@ -74,6 +74,3 @@ dataset/chitanda_eru/4553108.jpg
 dataset/chitanda_eru/4766032.jpg
 dataset/chitanda_eru/476603217008.jpg
 dataset/chitanda_eru/index.txt
-g
-\dataset\chitanda_eru\476603217008.jpg
-\dataset\chitanda_eru\index.txt

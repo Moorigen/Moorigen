@@ -74,6 +74,3 @@ dataset/meltlilith/3951023.jpg
 dataset/meltlilith/4007014.jpg
 dataset/meltlilith/4010161.jpg
 dataset/meltlilith/index.txt
-007014.jpg
-\dataset\meltlilith\4010161.jpg
-\dataset\meltlilith\index.txt

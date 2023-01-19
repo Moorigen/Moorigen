@@ -74,5 +74,3 @@ dataset/takao_(azur_lane)/4021144.jpg
 dataset/takao_(azur_lane)/4142133.jpg
 dataset/takao_(azur_lane)/4486062.jpg
 dataset/takao_(azur_lane)/index.txt
-ataset\takao_(azur_lane)\4486062.jpg
-\dataset\takao_(azur_lane)\index.txt

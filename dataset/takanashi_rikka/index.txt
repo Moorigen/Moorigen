@@ -74,6 +74,3 @@ dataset/takanashi_rikka/4303126.jpg
 dataset/takanashi_rikka/4642024.jpg
 dataset/takanashi_rikka/4734148.jpg
 dataset/takanashi_rikka/index.txt
-
-\dataset\takanashi_rikka\4734148.jpg
-\dataset\takanashi_rikka\index.txt

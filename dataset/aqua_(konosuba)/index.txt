@@ -74,6 +74,3 @@ dataset/aqua_(konosuba)/4779110.jpg
 dataset/aqua_(konosuba)/4788040.jpg
 dataset/aqua_(konosuba)/4807142.jpg
 dataset/aqua_(konosuba)/index.txt
-
-\dataset\aqua_(konosuba)\4807142.jpg
-\dataset\aqua_(konosuba)\index.txt

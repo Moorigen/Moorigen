@@ -74,5 +74,3 @@ dataset/chloe_von_einzbern/4591119.jpg
 dataset/chloe_von_einzbern/4607015.jpg
 dataset/chloe_von_einzbern/4745023.jpg
 dataset/chloe_von_einzbern/index.txt
-aset\chloe_von_einzbern\4745023.jpg
-\dataset\chloe_von_einzbern\index.txt

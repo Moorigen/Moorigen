@@ -209,14 +209,22 @@ namespace saoPrepTool {
                                 string allFolders = "";
                                 foreach (string subFolder in Directory.EnumerateDirectories(dv.path)) {
                                     allFolders += $"{subFolder.Remove(0, root.Length + 1).Replace("\\", "/")}\n";
-                                    using (FileStream fileOut = File.Open($"{subFolder}\\index.txt", FileMode.OpenOrCreate))
+                                    string filePath = $"{subFolder}\\index.txt";
+                                    if (File.Exists(filePath)) {
+                                        File.Delete(filePath);
+                                    }
+                                    using (FileStream fileOut = File.Open(filePath, FileMode.CreateNew))
                                     using (TextWriter writer = new StreamWriter(fileOut)) {
                                         foreach (string fileName in Directory.EnumerateFiles(subFolder)) {
                                             writer.WriteLine(fileName.Remove(0, root.Length + 1).Replace("\\", "/"));
                                         }
                                     }
                                 }
-                                using (FileStream fileOut2 = File.Open($"{dv.path}\\index.txt", FileMode.OpenOrCreate))
+                                string filePath2 = $"{dv.path}\\index.txt";
+                                if (File.Exists(filePath2)) {
+                                    File.Delete(filePath2);
+                                }
+                                using (FileStream fileOut2 = File.Open(filePath2, FileMode.CreateNew))
                                 using (TextWriter writer2 = new StreamWriter(fileOut2)) {
                                     writer2.Write(allFolders);
                                 }

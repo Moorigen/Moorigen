@@ -71,5 +71,3 @@ dataset/oshino_ougi/ougi-oshino[4].jpg
 dataset/oshino_ougi/Screenshot 2022-03-03 220632.png
 dataset/oshino_ougi/tumblr_p6b7a4PN1Z1w3jubzo8_640.jpg
 dataset/oshino_ougi/wp9207900.jpg
-\tumblr_p6b7a4PN1Z1w3jubzo8_640.jpg
-\dataset\oshino_ougi\wp9207900.jpg

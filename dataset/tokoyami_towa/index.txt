@@ -74,6 +74,3 @@ dataset/tokoyami_towa/4804052.jpg
 dataset/tokoyami_towa/4810094.jpg
 dataset/tokoyami_towa/4824010.jpg
 dataset/tokoyami_towa/index.txt
-.jpg
-\dataset\tokoyami_towa\4824010.jpg
-\dataset\tokoyami_towa\index.txt

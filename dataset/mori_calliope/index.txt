@@ -74,6 +74,3 @@ dataset/mori_calliope/4806121.jpg
 dataset/mori_calliope/4807011.jpg
 dataset/mori_calliope/4815100.jpg
 dataset/mori_calliope/index.txt
-.jpg
-\dataset\mori_calliope\4815100.jpg
-\dataset\mori_calliope\index.txt

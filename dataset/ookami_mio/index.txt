@@ -73,6 +73,3 @@ dataset/ookami_mio/4744086.jpg
 dataset/ookami_mio/4744163.jpg
 dataset/ookami_mio/4765028.jpg
 dataset/ookami_mio/index.txt
-44163.jpg
-\dataset\ookami_mio\4765028.jpg
-\dataset\ookami_mio\index.txt

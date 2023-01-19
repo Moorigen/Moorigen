@@ -74,5 +74,3 @@ dataset/taihou_(azur_lane)/4802139.jpg
 dataset/taihou_(azur_lane)/48021396332.jpg
 dataset/taihou_(azur_lane)/4823135.jpg
 dataset/taihou_(azur_lane)/index.txt
-aset\taihou_(azur_lane)\4823135.jpg
-\dataset\taihou_(azur_lane)\index.txt

@@ -74,5 +74,3 @@ dataset/shinomiya_kaguya/4546145145728.jpg
 dataset/shinomiya_kaguya/4718132145733.jpg
 dataset/shinomiya_kaguya/4718132145735.jpg
 dataset/shinomiya_kaguya/index.txt
-et\shinomiya_kaguya\4718132145735.jpg
-\dataset\shinomiya_kaguya\index.txt

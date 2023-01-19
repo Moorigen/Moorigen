@@ -74,5 +74,3 @@ dataset/bremerton_(azur_lane)/4787035.jpg
 dataset/bremerton_(azur_lane)/4821144.jpg
 dataset/bremerton_(azur_lane)/4821147.jpg
 dataset/bremerton_(azur_lane)/index.txt
-remerton_(azur_lane)\4821147.jpg
-\dataset\bremerton_(azur_lane)\index.txt

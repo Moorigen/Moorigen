@@ -74,6 +74,3 @@ dataset/megumin/4554048.jpg
 dataset/megumin/4786154.jpg
 dataset/megumin/4815099.jpg
 dataset/megumin/index.txt
-umin\4786154.jpg
-\dataset\megumin\4815099.jpg
-\dataset\megumin\index.txt
