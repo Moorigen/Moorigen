@@ -60,15 +60,6 @@ function deleteAllCookies() {
 	sessionStep = 0;
 }
 
-function textFile() {
-	$.ajax({
-        type: "GET",
-        url: "text.txt",
-        dataType: "text",
-        success: function(data) {document.getElementById("a").innerHTML = data;}
-     });
-}
-
 function webHook() {
 	console.log("requesting");
 	const userAction = async () => {
@@ -77,14 +68,6 @@ function webHook() {
 		console.log(myJson);
 	}
 	userAction();
-}
-
-async function delay() {
-	var to = new Promise(function(resolve) {
-		setTimeout(function() {resolve("Delay")}, 2000);
-	});
-	document.getElementById("a").innerHTML = await to;
-	document.getElementById("img1").style.border = "thick solid #FF0000";
 }
 
 function setText() {
@@ -108,6 +91,7 @@ function webPost() {
 		}
 	});
 }
+
 
 const maxVotes = 15;
 var evalStep = 0;
@@ -146,21 +130,25 @@ async function startEval(vote) {
 	});
 	var path1 = await getRandomAYAYA();
 	var path2 = await getRandomAYAYA();
-	while (path2 == path1) {
+	while (path2[1] == path1[1]) {
 		path2 = await getRandomAYAYA();
 	}
 	var path3 = await getRandomAYAYA();
-	while (path3 == path1 || path3 == path2) {
+	while ((path3[1] == path1[1] || path3[1] == path2[1])) {
 		path3 = await getRandomAYAYA();
 	}
-	lastSeenImages = `${path1}|${path2}|${path3}`;
-	document.getElementById("img1").setAttribute("src", path1);
-	document.getElementById("img2").setAttribute("src", path2);
-	document.getElementById("img3").setAttribute("src", path3);
+	lastSeenImages = `${path1[0]}|${path2[0]}|${path3[0]}`;
+	document.getElementById("img1").setAttribute("src", path1[0]);
+	document.getElementById("img2").setAttribute("src", path2[0]);
+	document.getElementById("img3").setAttribute("src", path3[0]);
+	var to = new Promise(function(resolve) {
+		setTimeout(function() {resolve("Delay")}, 250);
+	});
+	await to;
 	document.getElementById("img1").style.opacity = "100%";
 	document.getElementById("img2").style.opacity = "100%";
 	document.getElementById("img3").style.opacity = "100%";
-	var to = new Promise(function(resolve) {
+	to = new Promise(function(resolve) {
 		setTimeout(function() {resolve("Delay")}, 2000);
 	});
 	await to;
@@ -183,26 +171,38 @@ async function startEval(vote) {
 	});
 }
 
+const errorReturns = [
+	["dataset/misaka_mikoto/3429165.jpg", "dataset/misaka_mikoto"], 
+	["dataset/asuna_(sao)/2114129.jpg", "dataset/asuna_(sao)"], 
+	["dataset/sinon/3809115.jpg", "dataset/sinon"]];
+var errorIndex = 0;
 async function getRandomAYAYA() {
-	var data = await $.ajax({
-        type: "GET",
-        url: "dataset/index.txt",
-        dataType: "text",
-     });
-	var dir = randomLineFromText(data);
-	while(dir.length < 3) {
-		dir = randomLineFromText(data);
-	} 
-	var data2 = await $.ajax({
-		type: "GET",
-		url: dir + "/index.txt",
-		dataType: "text",
-	});
-	var r = randomLineFromText(data2);
-	while(r.length < 3) {
-		r = randomLineFromText(data2);
+	try{
+		var data = await $.ajax({
+			type: "GET",
+			url: "dataset/index.txt",
+			dataType: "text",
+		});
+		var dir = randomLineFromText(data);
+		while(dir.length < 3) {
+			dir = randomLineFromText(data);
+		} 
+		var data2 = await $.ajax({
+			type: "GET",
+			url: dir + "/index.txt",
+			dataType: "text",
+		});
+		var r = randomLineFromText(data2);
+		while(r.length < 3) {
+			r = randomLineFromText(data2);
+		}
+		return [r, dir]
 	}
-	return r
+	catch(e){
+		console.log(e);
+	}
+	errorIndex = (errorIndex + 1) % 3;
+	return errorReturns[errorIndex];
 }
 
 function randomLineFromText(text) {
