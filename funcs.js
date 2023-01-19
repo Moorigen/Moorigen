@@ -164,7 +164,7 @@ async function startEval(vote) {
 		setTimeout(function() {resolve("Delay")}, 2000);
 	});
 	await to;
-	lastFocusedImg = (Math.random() * 2) + 1
+	lastFocusedImg = Math.floor(Math.random() * 2) + 1
 	document.getElementById(`img${lastFocusedImg}`).style.border = "thick solid #FF0000";
 	to = new Promise(function(resolve) {
 		setTimeout(function() {resolve("Delay")}, 1000);
