@@ -38,22 +38,6 @@ function setCookie(cname,cvalue,exdays) {
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function getCookieOld(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
 function getCookie(cname) {
   const decodedCookie = decodeURIComponent(document.cookie);
   const match = decodedCookie.match(new RegExp(cname + '=([^;]+)'));
@@ -73,6 +57,7 @@ function deleteAllCookies() {
         var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
         document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
+	sessionStep = 0;
 }
 
 function textFile() {
@@ -124,10 +109,11 @@ function webPost() {
 	});
 }
 
+const maxVotes = 15;
 var evalStep = 0;
-const focusImages = ["img1","img3","img2","img1","img1","img3"];
 var sessionStep = 0;
 var lastSeenImages = "";
+var lastFocusedImg = 0;
 async function startEval(vote) {
 	if(evalStep == 0) {
 		var mNr = parseInt(document.getElementById("matrNrInput").value);
@@ -147,9 +133,9 @@ async function startEval(vote) {
 		evalStep = isNaN(evalStepCk) ? 0 : evalStepCk;
 	} else {
 		sessionStep++;
-		console.log(`${lastSeenImages}||${evalStep}|${sessionStep}|${focusImages[evalStep]}|${vote}`);
+		console.log(`${lastSeenImages}||${evalStep}|${sessionStep}|${lastFocusedImg}|${vote}`);
 	}
-	if(evalStep >= focusImages.length){
+	if(evalStep + sessionStep >= maxVotes){
 		document.getElementById("imgContainer").style.display = "none";
 		document.getElementById("evalButtons").style.display = "none";
 		document.getElementById("finishedContainer").style.display = "block";
@@ -167,9 +153,6 @@ async function startEval(vote) {
 	while (path3 == path1 || path3 == path2) {
 		path3 = await getRandomAYAYA();
 	}
-	console.log(path1);
-	console.log(path2);
-	console.log(path3);
 	lastSeenImages = `${path1}|${path2}|${path3}`;
 	document.getElementById("img1").setAttribute("src", path1);
 	document.getElementById("img2").setAttribute("src", path2);
@@ -181,7 +164,8 @@ async function startEval(vote) {
 		setTimeout(function() {resolve("Delay")}, 2000);
 	});
 	await to;
-	document.getElementById(focusImages[evalStep]).style.border = "thick solid #FF0000";
+	lastFocusedImg = (Math.random() * 2) + 1
+	document.getElementById(`img${lastFocusedImg}`).style.border = "thick solid #FF0000";
 	to = new Promise(function(resolve) {
 		setTimeout(function() {resolve("Delay")}, 1000);
 	});
@@ -192,7 +176,7 @@ async function startEval(vote) {
 	document.getElementById("img1").src = "YEP.png";
 	document.getElementById("img2").src = "YEP.png";
 	document.getElementById("img3").src = "YEP.png";
-	document.getElementById(focusImages[evalStep]).style.border = "thick solid #333333";
+	document.getElementById(`img${lastFocusedImg}`).style.border = "thick solid #333333";
 	evalStep++;
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = false;
