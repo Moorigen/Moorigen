@@ -9,9 +9,9 @@ function closingCode(){
    var evalStepCk = getCookie("evalStep");
    if(evalStepCk != "") {
 		evalStepCk = parseInt(evalStepCk);
-		setCookie("evalStep", evalStepCk + votes.length, 10);
+		setCookie("evalStep", evalStepCk + sessionStep, 10);
    } else {
-	   setCookie("evalStep", votes.length, 10);
+	   setCookie("evalStep", sessionStep, 10);
    }
    return null;
 }
@@ -126,7 +126,8 @@ function webPost() {
 
 var evalStep = 0;
 const focusImages = ["img1","img3","img2","img1","img1","img3"];
-var votes = [];
+var sessionStep = 0;
+var lastSeenImages = "";
 async function startEval(vote) {
 	if(evalStep == 0) {
 		var mNr = parseInt(document.getElementById("matrNrInput").value);
@@ -145,8 +146,8 @@ async function startEval(vote) {
 		evalStepCk = parseInt(evalStepCk);
 		evalStep = isNaN(evalStepCk) ? 0 : evalStepCk;
 	} else {
-		votes[evalStep - 1] = vote;
-		console.log(votes);
+		sessionStep++;
+		console.log(`${lastSeenImages}||{evalStep}|{sessionStep}|{focusImages[evalStep]}|{vote}`);
 	}
 	if(evalStep >= focusImages.length){
 		document.getElementById("imgContainer").style.display = "none";
@@ -166,6 +167,10 @@ async function startEval(vote) {
 	while (path3 == path1 || path3 == path2) {
 		path3 = await getRandomAYAYA();
 	}
+	console.log(path1);
+	console.log(path2;
+	console.log(path3);
+	lastSeenImages = `${path1}|{path2}|{path3}`;
 	document.getElementById("img1").setAttribute("src", path1);
 	document.getElementById("img2").setAttribute("src", path2);
 	document.getElementById("img3").setAttribute("src", path3);
