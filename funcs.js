@@ -58,38 +58,7 @@ function deleteAllCookies() {
         document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
 	sessionStep = 0;
-}
-
-function webHook() {
-	console.log("requesting");
-	const userAction = async () => {
-		const response = await fetch('http://mellon-011.hs-mittweida.de/textapi/es/user/admin');
-		const myJson = await response.json(); //extract JSON from the http response
-		console.log(myJson);
-	}
-	userAction();
-}
-
-function setText() {
-	document.getElementById("a").innerHTML = document.getElementById("input").value;
-	$.ajax({
-		type: "POST",
-		url: "text.txt",
-		dataType: "text",
-		data: "we changed the text"
-	});
-}
-
-function webPost() {
-	$.ajax({
-		type: "POST",
-		url: "http://mellon-011.hs-mittweida.de/textapi/analyze",
-		dataType: "JSON",
-		data: {"text": "this is a testable text for testing-purposes"},
-		success: function(data){
-			console.log(data);
-		}
-	});
+	location.reload();
 }
 
 var samePersonMode = false;
@@ -98,7 +67,8 @@ function modeSwap() {
 	document.getElementById("samePersonSwapButton").innerHTML = samePersonMode ? "different people" : "same person";
 }
 
-const maxVotes = 15;
+var maxVotes = 15;
+var soloIterations = 3;
 var evalStep = 0;
 var sessionStep = 0;
 var lastSeenImages = "";
@@ -106,7 +76,7 @@ var lastFocusedImg = 0;
 async function startEval(vote) {
 	if(evalStep == 0) {
 		var mNr = parseInt(document.getElementById("matrNrInput").value);
-		if (isNaN(mNr) || mNr < 10000 || mNr > 75000) {
+		if (isNaN(mNr) || mNr < 10000 || mNr > 99999) {
 			console.log("returning");
 			return;
 		}
@@ -122,7 +92,8 @@ async function startEval(vote) {
 		evalStep = isNaN(evalStepCk) ? 0 : evalStepCk;
 	} else {
 		sessionStep++;
-		console.log(`${lastSeenImages}||${evalStep}|${sessionStep}|${lastFocusedImg}|${vote}`);
+		//console.log(`${lastSeenImages}||${evalStep}|${sessionStep}|${lastFocusedImg}|${vote}`);
+		logPhp(`${getCookie("MatrNr")},${lastSeenImages},${evalStep},${sessionStep},${lastFocusedImg},${vote}`);
 	}
 	if(evalStep >= maxVotes){
 		document.getElementById("imgContainer").style.display = "none";
@@ -134,30 +105,41 @@ async function startEval(vote) {
 		button.disabled = true;
 	});
 	var path1 = await getRandomAYAYA();
-	var path2 = await getRandomAYAYA(samePersonMode ? path1[1] : "");
-	while ((path2[1] == path1[1]) && !samePersonMode) {
-		path2 = await getRandomAYAYA();
+	var isSolo = soloIterations > evalStep;
+	if(!isSolo){
+		var path2 = await getRandomAYAYA(samePersonMode ? path1[1] : "");
+		while ((path2[1] == path1[1]) && !samePersonMode) {
+			path2 = await getRandomAYAYA();
+		}
+		var path3 = await getRandomAYAYA(samePersonMode ? path1[1] : "");
+		while ((path3[1] == path1[1] || path3[1] == path2[1]) && !samePersonMode) {
+			path3 = await getRandomAYAYA();
+		}
+		lastSeenImages = `${path1[0]}|${path2[0]}|${path3[0]}`;
+		
+		document.getElementById("img1").setAttribute("src", path1[0]);
+		document.getElementById("img2").setAttribute("src", path2[0]);
+		document.getElementById("img3").setAttribute("src", path3[0]);
+	} else {
+		//putting the solo picture in the middle
+		lastSeenImages = `$solo|{path1[0]}|solo`;
+		document.getElementById("img2").setAttribute("src", path1[0]);
 	}
-	var path3 = await getRandomAYAYA(samePersonMode ? path1[1] : "");
-	while ((path3[1] == path1[1] || path3[1] == path2[1]) && !samePersonMode) {
-		path3 = await getRandomAYAYA();
-	}
-	lastSeenImages = `${path1[0]}|${path2[0]}|${path3[0]}`;
-	document.getElementById("img1").setAttribute("src", path1[0]);
-	document.getElementById("img2").setAttribute("src", path2[0]);
-	document.getElementById("img3").setAttribute("src", path3[0]);
+	
 	var to = new Promise(function(resolve) {
 		setTimeout(function() {resolve("Delay")}, 250);
 	});
 	await to;
-	document.getElementById("img1").style.opacity = "100%";
+	if(!isSolo){
+		document.getElementById("img1").style.opacity = "100%";
+		document.getElementById("img3").style.opacity = "100%";
+	}
 	document.getElementById("img2").style.opacity = "100%";
-	document.getElementById("img3").style.opacity = "100%";
 	to = new Promise(function(resolve) {
 		setTimeout(function() {resolve("Delay")}, 2000);
 	});
 	await to;
-	lastFocusedImg = Math.floor(Math.random() * 2) + 1
+	lastFocusedImg = isSolo ? 2 : Math.floor(Math.random() * 2) + 1;
 	document.getElementById(`img${lastFocusedImg}`).style.border = "thick solid #FF0000";
 	to = new Promise(function(resolve) {
 		setTimeout(function() {resolve("Delay")}, 1000);
@@ -220,4 +202,24 @@ function randomLineFromText(text) {
 		index--;
 	}
 	return lines[index];
+}
+
+function logPhp(vals) {
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			console.log(this.responseText);
+		}
+	}
+	xmlhttp.open("GET", "log.php?val="+vals);
+	xmlhttp.send();
+}
+
+function setVote(){
+	var votes = parseInt(document.getElementById("voteCount").value);
+	if (isNaN(votes) || votes < 1 || votes > 75) {
+		console.log("returning");
+		return;
+	}
+	maxVotes = votes;
 }
