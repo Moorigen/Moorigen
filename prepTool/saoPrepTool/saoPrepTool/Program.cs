@@ -169,41 +169,8 @@ namespace saoPrepTool {
                                 dv.RefreshFiles();
 
                                 break;
-                            case "crashes":
-                                break;
-                                dv.help = "Running in chosen directory...";
-                                dv.Display();
-                                foreach (string fileName in Directory.EnumerateFiles(dv.path)) {
-                                    if (fileName.Contains("gigamerge")) {
-
-                                        string[] docLines = File.OpenText(fileName).ReadToEnd().Split('\n');
-
-                                        FileStream fileOut = File.Open($"{dv.path}\\crashes.txt", FileMode.CreateNew);
-                                        TextWriter writer = new StreamWriter(fileOut);
-
-                                        bool isNextCrash = true;
-                                        foreach (string fLine in docLines) {
-                                            string[] cols = RemoveControlCharacters(fLine).Split(',');
-                                            if (cols.Length > 44 && cols[46].Length >= 1) {
-                                                if (isNextCrash) {
-                                                    writer.WriteLine(RemoveCharacter(cols[13], '"'));
-                                                    isNextCrash = false;
-                                                }
-                                            } else {
-                                                isNextCrash = true;
-                                            }
-                                        }
-
-                                        writer.Flush();
-                                        writer.Close();
-                                        writer.Dispose();
-                                        fileOut.Close();
-                                    }
-                                }
-                                dv.help = "Finished";
-                                break;
                             case "index":
-                                dv.help = "Running in chosen directory...";
+                                dv.help = "Indexing chosen directory...";
                                 dv.Display();
                                 string root = Directory.GetParent(dv.path).FullName;
                                 string allFolders = "";
@@ -230,6 +197,20 @@ namespace saoPrepTool {
                                     writer2.Write(allFolders);
                                 }
                                 dv.help = "Finished indexing";
+                                break;
+                            case "3min":
+                                dv.help = "Deleting subfolders with less than 3 files in chosen directory...";
+                                dv.Display();
+                                List<string> toBeDeleted = new List<string>();
+                                foreach (string subFolder in Directory.EnumerateDirectories(dv.path)) {
+                                    if (Directory.GetFiles(subFolder).Length < 3) {
+                                        toBeDeleted.Add(subFolder);
+                                    } 
+                                }
+                                foreach (string deletable in toBeDeleted) {
+                                    Directory.Delete(deletable, true);
+                                }
+                                dv.help = "Only 3+ file folders exist";
                                 break;
                             default:
                                 string folder = dv.files.Where(f => f == line).FirstOrDefault();
