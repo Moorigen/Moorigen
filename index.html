@@ -4,63 +4,118 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-	<h1>'Tis but a test</h1>
-	<p id="a">I'm glad it works tho</p>
-	<!--<div class="grid-container">
-		<div class="grid-item">1</div>
-		<div class="grid-item">2</div>
-		<div class="grid-item">3</div>  
-		<div class="grid-item">4</div>
-		<div class="grid-item">5</div>
-		<div class="grid-item">6</div>  
-		<div class="grid-item">7</div>
-		<div class="grid-item">8</div>
-		<div class="grid-item">9</div>  
-	</div>-->
-	<div class="img-layout-container" id="matrNrField">
-			<h1>Enter Matrk.Nr. here:</h1>
-			<input type="number" id="matrNrInput" style="font-size:24pt; width:98%">
+
+	<div class="container">
+
+		<div class="left">
+		  <!-- content for left column goes here -->
+
+		  <div
+		  style="height: 30%;">
+		  </div>
+
+		  <h1 style="text-align:center;">Registrierung</h1>
+		  
+
+		  <body>
+			<!--<div class="grid-container">
+				<div class="grid-item">1</div>
+				<div class="grid-item">2</div>
+				<div class="grid-item">3</div>  
+				<div class="grid-item">4</div>
+				<div class="grid-item">5</div>
+				<div class="grid-item">6</div>  
+				<div class="grid-item">7</div>
+				<div class="grid-item">8</div>
+				<div class="grid-item">9</div>  
+			</div>-->
+			
+
+
+			<div class="img-layout-container" id="matrNrField">
+
+				<div class="registration_columns_left">
+
+					<h1>Matrk. Nr.:</h1>
+
+					<h1>Alter:</h1>
+
+					<h1>Geschlecht:</h1>
+					
+
+				</div>
+
+					<div class="registration_columns_right">
+
+
+						<input type="number" class="inputBox" id="matrNrInput" style="font-size:24pt; width:98%">
+
+						<input type="number" class="inputBox" id="matrNrInput2" style="font-size:24pt; width:98%">
+
+						<input type="word" class="inputBox" id="matrNrInput3" style="font-size:24pt; width:98%">
+
+					</div>
+			</div>
+
+			<div class="img-layout-container" id="imgContainer" style="display:none;">
+				<img class="img-layout-display" src="YEP.png" alt="<1>" id="img1" style="opacity:0%">
+				<img class="img-layout-display" src="YEP.png" alt="<2>" id="img2" style="opacity:0%">
+				<img class="img-layout-display" src="YEP.png" alt="<3>" id="img3" style="opacity:0%">
+			</div>
+			<div style="display:block; margin: 0 auto; padding-top:15px; text-align: center;">
+				<button type="button" class="button-start" id="startButton" onclick="startEval()">START</button>
+				<div id="evalButtons" style="display:none">
+					<span class="button-eval">Very Ugly</span>
+					<button type="button" class="button-eval" onclick="startEval(1)">1</button>
+					<button type="button" class="button-eval" onclick="startEval(2)">2</button>
+					<button type="button" class="button-eval" onclick="startEval(3)">3</button>
+					<button type="button" class="button-eval" onclick="startEval(4)">4</button>
+					<button type="button" class="button-eval" onclick="startEval(5)">5</button>
+					<button type="button" class="button-eval" onclick="startEval(6)">6</button>
+					<span class="button-eval">Very Pretty</span>
+				</div>
+			</div>
+			<div class="img-layout-container" id="finishedContainer" style="display:none;">
+				<h1 style="text-align:center;font-size:36pt;">Thank you for your participation!</h1>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<button type="button" onclick="deleteAllCookies()">delete cookies</button>
+			<br>
+			<button type="button" id="samePersonSwapButton" onclick="modeSwap()">same person</button>
+			<br>
+			<span style="color:#000000">Mox vote count </span>
+			<input type="number" id="voteCount" style="font-size:10pt; width:30pt" value=15>
+			<button type="button" onclick="setVote()">set</button>
+			<script src="funcs.js"></script>
+
 		</div>
-	<div class="img-layout-container" id="imgContainer" style="display:none;">
-		<img class="img-layout-display" src="YEP.png" alt="<1>" id="img1" style="opacity:0%">
-		<img class="img-layout-display" src="YEP.png" alt="<2>" id="img2" style="opacity:0%">
-		<img class="img-layout-display" src="YEP.png" alt="<3>" id="img3" style="opacity:0%">
-	</div>
-	<div style="display:block; margin: 0 auto; padding-top:15px; text-align: center;">
-		<button type="button" class="button-start" id="startButton" onclick="startEval()">START</button>
-		<div id="evalButtons" style="display:none">
-			<span class="button-eval">Very Ugly</span>
-			<button type="button" class="button-eval" onclick="startEval(1)">1</button>
-			<button type="button" class="button-eval" onclick="startEval(2)">2</button>
-			<button type="button" class="button-eval" onclick="startEval(3)">3</button>
-			<button type="button" class="button-eval" onclick="startEval(4)">4</button>
-			<button type="button" class="button-eval" onclick="startEval(5)">5</button>
-			<button type="button" class="button-eval" onclick="startEval(6)">6</button>
-			<span class="button-eval">Very Pretty</span>
+
+		<div class="right">
+		  <!-- content for right column goes here -->
+		  <div class="image-container">
+
+		  <img src="Lance_Armstrong_0001.jpg" alt="Image 1" class="img1">
+		  <img src="Nicolas_Cage_0001.jpg" alt="Image 2" class="img2">
+		  <img src="Pascal_Quignard_0002.jpg" alt="Image 3" class="img3">
+		  </div>
+
+		  <div class="text-container">
+			<p>In diesem Experiment, werden Ihnen jeweils drei Gesichter angezeigt. <br>
+				Eines davon ist eingerahmt und von diesem sollen Sie die Attraktivität <br>anhand einer
+				 Skala von 1-7 bewerten.</p>
+		  </div>
+		  
 		</div>
+
+
+	  
 	</div>
-	<div class="img-layout-container" id="finishedContainer" style="display:none;">
-		<h1 style="text-align:center;font-size:36pt;">Thank you for your participation!</h1>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<button type="button" onclick="deleteAllCookies()">delete cookies</button>
-	<br>
-	<button type="button" id="samePersonSwapButton" onclick="modeSwap()">same person</button>
-	<br>
-	<br>
-	<br>
-	<button type="button" onclick="webHook()">web</button>
-	<script src="funcs.js"></script>
-	<br>
-	<input type="text" id="input">
-	<button type="button" onclick="setText()">set</button>
-	<button type="button" onclick="webPost()">web</button>
+
 </body>
 </html>
