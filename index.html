@@ -5,8 +5,10 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-	<div class="container">
+						<!--Switch display: none/grid-->
+	<div class="container" style= "display: none">
 
+		
 		<div class="left">
 		  <!-- content for left column goes here -->
 
@@ -89,7 +91,7 @@
 			<br>
 			<button type="button" id="samePersonSwapButton" onclick="modeSwap()">same person</button>
 			<br>
-			<span style="color:#000000">Mox vote count </span>
+			<span style="color:#000000">Max vote count </span>
 			<input type="number" id="voteCount" style="font-size:10pt; width:30pt" value=15>
 			<button type="button" onclick="setVote()">set</button>
 			<script src="funcs.js"></script>
@@ -100,21 +102,48 @@
 		  <!-- content for right column goes here -->
 		  <div class="image-container">
 
-		  <img src="Lance_Armstrong_0001.jpg" alt="Image 1" class="img1">
-		  <img src="Nicolas_Cage_0001.jpg" alt="Image 2" class="img2">
-		  <img src="Pascal_Quignard_0002.jpg" alt="Image 3" class="img3">
+			<img class="previewImage" src="Lance_Armstrong_0001.jpg" alt="<1>" id="img1" style="opacity:80%">
+				<img class="previewImage" src="Nicolas_Cage_0001.jpg" alt="<2>" id="img2" style="opacity:80%">
+				<img class="previewImage" src="Pascal_Quignard_0002.jpg" alt="<3>" id="img3" style="opacity:80%">
 		  </div>
 
 		  <div class="text-container">
-			<p>In diesem Experiment, werden Ihnen jeweils drei Gesichter angezeigt. <br>
-				Eines davon ist eingerahmt und von diesem sollen Sie die Attraktivität <br>anhand einer
+			<p>In diesem Experiment werden Ihnen jeweils drei Gesichter angezeigt. <br>
+				Eines dieser Gesichter ist eingerahmt und von diesem sollen Sie die Attraktivität <br>anhand einer
 				 Skala von 1-7 bewerten.</p>
 		  </div>
 		  
 		</div>
-
-
 	  
+	</div>
+
+	<!-- SEPARATION WHATEVER-->
+						
+	<div style="display: block;">
+		<div class="actual-img-layout-container"> 
+				<h1>Bitte bewerte die Attraktivität des eingerahmten Gesichts:</h1>
+		</div>
+		
+		<div class="actual-img-layout-container"> 
+			<img class="img-layout-display" src="Lance_Armstrong_0001.jpg" alt="<1>" id="img1" style="opacity:80%">
+			<img class="img-layout-display" src="Nicolas_Cage_0001.jpg" alt="<2>" id="img2" style="opacity:80%">
+			<img class="img-layout-display" src="Pascal_Quignard_0002.jpg" alt="<3>" id="img3" style="opacity:80%">
+		</div>
+
+		<div style="display:block; margin: 0 auto; padding-top:15px; text-align: center;">
+			<button type="button" class="button-eval" style="background-color: #d73027; border-color: #b12922;" onclick="startEval(1)">1</button>
+			<button type="button" class="button-eval" style="background-color: beige;" onclick="startEval(2)">2</button> 
+			<button type="button" class="button-eval" style="background-color: beige;" onclick="startEval(3)">3</button>
+			<button type="button" class="button-eval" style="background-color: beige;" onclick="startEval(4)">4</button>
+			<button type="button" class="button-eval" style="background-color: beige;" onclick="startEval(5)">5</button>
+			<button type="button" class="button-eval" style="background-color: beige;" onclick="startEval(6)">6</button>
+			<button type="button" class="button-eval" style="background-color: beige;" onclick="startEval(7)">7</button>
+
+			<br>
+			<span class="buttonDescription" >unattraktiv</span>
+			<span class="buttonDescription" >attraktiv</span>
+		</div>
+
 	</div>
 
 </body>
