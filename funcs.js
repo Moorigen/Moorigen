@@ -132,16 +132,16 @@ async function startEval(vote) {
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = true;
 	});
-	var path1 = await getRandomAYAYA();
+	var path1 = await getRandomPicture();
 	var isSolo = soloIterations > evalStep;
 	if(!isSolo){
-		var path2 = await getRandomAYAYA(samePersonMode ? path1[1] : "");
+		var path2 = await getRandomPicture(samePersonMode ? path1[1] : "");
 		while ((path2[1] == path1[1]) && !samePersonMode) {
-			path2 = await getRandomAYAYA();
+			path2 = await getRandomPicture();
 		}
-		var path3 = await getRandomAYAYA(samePersonMode ? path1[1] : "");
+		var path3 = await getRandomPicture(samePersonMode ? path1[1] : "");
 		while ((path3[1] == path1[1] || path3[1] == path2[1]) && !samePersonMode) {
-			path3 = await getRandomAYAYA();
+			path3 = await getRandomPicture();
 		}
 		lastSeenImages = `${path1[0]}|${path2[0]}|${path3[0]}`;
 		
@@ -179,7 +179,7 @@ async function startEval(vote) {
 	document.getElementById("img1").src = "YEP.png";
 	document.getElementById("img2").src = "YEP.png";
 	document.getElementById("img3").src = "YEP.png";
-	document.getElementById(`img${lastFocusedImg}`).style.border = "thick solid #333333";
+	document.getElementById(`img${lastFocusedImg}`).style.border = "none";
 	evalStep++;
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = false;
@@ -191,12 +191,12 @@ const errorReturns = [
 	["datasets/ayaya/asuna_(sao)/2114129.jpg", "datasets/ayaya/asuna_(sao)"], 
 	["datasets/ayaya/sinon/3809115.jpg", "datasets/ayaya/sinon"]];
 var errorIndex = 0;
-async function getRandomAYAYA(dir = "") {
+async function getRandomPicture(dir = "") {
 	try{
 		if (dir == "") {
 			var data = await $.ajax({
 			type: "GET",
-			url: "datasets/ayaya/index.txt",
+			url: "datasets/" + (ayayaMode ? "ayaya" : "lfw") + "/index.txt",
 			dataType: "text",
 			});
 			var dir = randomLineFromText(data);
