@@ -1,0 +1,5 @@
+lfw/Ray_Romano/Ray_Romano_0001.jpg
+lfw/Ray_Romano/Ray_Romano_0002.jpg
+lfw/Ray_Romano/Ray_Romano_0003.jpg
+lfw/Ray_Romano/Ray_Romano_0004.jpg
+lfw/Ray_Romano/Ray_Romano_0006.jpg

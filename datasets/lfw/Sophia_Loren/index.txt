@@ -1,0 +1,4 @@
+lfw/Sophia_Loren/Sophia_Loren_0001.jpg
+lfw/Sophia_Loren/Sophia_Loren_0002.jpg
+lfw/Sophia_Loren/Sophia_Loren_0004.jpg
+lfw/Sophia_Loren/Sophia_Loren_0006.jpg

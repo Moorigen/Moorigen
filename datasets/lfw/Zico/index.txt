@@ -1,0 +1,3 @@
+lfw/Zico/Zico_0001.jpg
+lfw/Zico/Zico_0002.jpg
+lfw/Zico/Zico_0003.jpg
