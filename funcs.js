@@ -24,9 +24,15 @@ function loadCode() {
 		console.log("first visit");
 	}
 	var mNr = getCookie("MatrNr");
+	var age = getCookie("Age");
+	var gender = getCookie("Gender");
 	if(mNr != "") {
 		document.getElementById("matrNrInput").value = mNr;
 		document.getElementById("matrNrInput").disabled = true;
+		document.getElementById("ageInput").value = age;
+		document.getElementById("ageInput").disabled = true;
+		document.getElementById("genderInput").value = gender;
+		document.getElementById("genderInput").disabled = true;
 		document.getElementById("startButton").innerHTML = "CONTINUE";
 	}
 }
@@ -64,7 +70,13 @@ function deleteAllCookies() {
 var samePersonMode = false;
 function modeSwap() {
 	samePersonMode = !samePersonMode;
-	document.getElementById("samePersonSwapButton").innerHTML = samePersonMode ? "different people" : "same person";
+	document.getElementById("samePersonSwapButton").innerHTML = "Same Person Mode: " + (samePersonMode ? "ON" : "OFF");
+}
+
+var ayayaMode = false;
+function sourceSwap() {
+	ayayaMode = !ayayaMode;
+	document.getElementById("ayayaSwap").innerHTML = "Anime: " + (ayayaMode ? "ON" : "OFF");
 }
 
 var maxVotes = 15;
@@ -77,15 +89,30 @@ async function startEval(vote) {
 	if(evalStep == 0) {
 		var mNr = parseInt(document.getElementById("matrNrInput").value);
 		if (isNaN(mNr) || mNr < 10000 || mNr > 99999) {
-			console.log("returning");
+			console.log("cancelled: Invalid mNr");
 			return;
 		}
-		setCookie("MatrNr", mNr, 10);
+		var age = parseInt(document.getElementById("ageInput").value);
+		if (isNaN(age) || age < 12 || age > 199) {
+			console.log("cancelled: Invalid age");
+			return;
+		}
+		var gender = document.getElementById("genderInput").value;
+		if (gender.length < 1 || gender.length > 9){
+			console.log("cancelled: Invalid gender");
+			return;
+		}
 		
-		document.getElementById("matrNrField").style.display = "none";
-		document.getElementById("imgContainer").style.display = "block";
-		document.getElementById("startButton").style.display = "none";
-		document.getElementById("evalButtons").style.display = "block";
+		setCookie("MatrNr", mNr, 10);
+		setCookie("Age", age, 10);
+		setCookie("Gender", gender, 10);
+		
+		//document.getElementById("matrNrField").style.display = "none";
+		//document.getElementById("imgContainer").style.display = "block";
+		//document.getElementById("startButton").style.display = "none";
+		//document.getElementById("evalButtons").style.display = "block";
+		document.getElementById("registerPage").style.display = "none";
+		document.getElementById("ratePage").style.display = "block";
 		
 		var evalStepCk = getCookie("evalStep");
 		evalStepCk = parseInt(evalStepCk);

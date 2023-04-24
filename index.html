@@ -6,7 +6,7 @@
 </head>
 
 						<!--Switch display: none/grid-->
-	<div class="container" style= "display: none">
+	<div id="registerPage" class="container" style= "display: grid">
 
 		
 		<div class="left">
@@ -52,9 +52,9 @@
 
 						<input type="number" class="inputBox" id="matrNrInput" style="font-size:24pt; width:98%">
 
-						<input type="number" class="inputBox" id="matrNrInput2" style="font-size:24pt; width:98%">
+						<input type="number" class="inputBox" id="ageInput" style="font-size:24pt; width:98%">
 
-						<input type="word" class="inputBox" id="matrNrInput3" style="font-size:24pt; width:98%">
+						<input type="word" class="inputBox" id="genderInput" style="font-size:24pt; width:98%">
 
 					</div>
 			</div>
@@ -89,7 +89,8 @@
 			<br>
 			<button type="button" onclick="deleteAllCookies()">delete cookies</button>
 			<br>
-			<button type="button" id="samePersonSwapButton" onclick="modeSwap()">same person</button>
+			<button type="button" id="samePersonSwapButton" style="width:170px" onclick="modeSwap()">Same Person Mode: OFF</button>
+			<button type="button" id="ayayaSwap" onclick="sourceSwap()">Anime: Off</button>
 			<br>
 			<span style="color:#000000">Max vote count </span>
 			<input type="number" id="voteCount" style="font-size:10pt; width:30pt" value=15>
@@ -119,7 +120,7 @@
 
 	<!-- SEPARATION WHATEVER-->
 						
-	<div style="display: block;">
+	<div id="ratePage" style="display: none">
 		<div class="actual-img-layout-container"> 
 				<h1>Bitte bewerte die Attraktivität des eingerahmten Gesichts:</h1>
 		</div>
