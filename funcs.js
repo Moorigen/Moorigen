@@ -86,6 +86,7 @@ var sessionStep = 0;
 var lastSeenImages = "";
 var lastFocusedImg = 0;
 async function startEval(vote) {
+	console.log(evalStep);
 	if(evalStep == 0) {
 		var mNr = parseInt(document.getElementById("matrNrInput").value);
 		if (isNaN(mNr) || mNr < 10000 || mNr > 99999) {
@@ -186,16 +187,16 @@ async function startEval(vote) {
 }
 
 const errorReturns = [
-	["dataset/misaka_mikoto/3429165.jpg", "dataset/misaka_mikoto"], 
-	["dataset/asuna_(sao)/2114129.jpg", "dataset/asuna_(sao)"], 
-	["dataset/sinon/3809115.jpg", "dataset/sinon"]];
+	["datasets/ayaya/misaka_mikoto/3429165.jpg", "datasets/ayaya/misaka_mikoto"], 
+	["datasets/ayaya/asuna_(sao)/2114129.jpg", "datasets/ayaya/asuna_(sao)"], 
+	["datasets/ayaya/sinon/3809115.jpg", "datasets/ayaya/sinon"]];
 var errorIndex = 0;
 async function getRandomAYAYA(dir = "") {
 	try{
 		if (dir == "") {
 			var data = await $.ajax({
 			type: "GET",
-			url: "dataset/index.txt",
+			url: "datasets/ayaya/index.txt",
 			dataType: "text",
 			});
 			var dir = randomLineFromText(data);

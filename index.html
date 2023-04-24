@@ -60,13 +60,13 @@
 			</div>
 
 			<div class="img-layout-container" id="imgContainer" style="display:none;">
-				<img class="img-layout-display" src="YEP.png" alt="<1>" id="img1" style="opacity:0%">
-				<img class="img-layout-display" src="YEP.png" alt="<2>" id="img2" style="opacity:0%">
-				<img class="img-layout-display" src="YEP.png" alt="<3>" id="img3" style="opacity:0%">
+				<img class="img-layout-display" src="YEP.png" alt="<1>" id="oimg1" style="opacity:0%">
+				<img class="img-layout-display" src="YEP.png" alt="<2>" id="oimg2" style="opacity:0%">
+				<img class="img-layout-display" src="YEP.png" alt="<3>" id="oimg3" style="opacity:0%">
 			</div>
 			<div style="display:block; margin: 0 auto; padding-top:15px; text-align: center;">
 				<button type="button" class="button-start" id="startButton" onclick="startEval()">START</button>
-				<div id="evalButtons" style="display:none">
+				<div id="evalButtonsOld" style="display:none">
 					<span class="button-eval">Very Ugly</span>
 					<button type="button" class="button-eval" onclick="startEval(1)">1</button>
 					<button type="button" class="button-eval" onclick="startEval(2)">2</button>
@@ -103,9 +103,9 @@
 		  <!-- content for right column goes here -->
 		  <div class="image-container">
 
-			<img class="previewImage" src="Lance_Armstrong_0001.jpg" alt="<1>" id="img1" style="opacity:80%">
-				<img class="previewImage" src="Nicolas_Cage_0001.jpg" alt="<2>" id="img2" style="opacity:80%">
-				<img class="previewImage" src="Pascal_Quignard_0002.jpg" alt="<3>" id="img3" style="opacity:80%">
+			<img class="previewImage" src="Lance_Armstrong_0001.jpg" alt="<1>" id="pimg1" style="opacity:80%">
+				<img class="previewImage" src="Nicolas_Cage_0001.jpg" alt="<2>" id="pimg2" style="opacity:80%">
+				<img class="previewImage" src="Pascal_Quignard_0002.jpg" alt="<3>" id="pimg3" style="opacity:80%">
 		  </div>
 
 		  <div class="text-container">
@@ -131,7 +131,7 @@
 			<img class="img-layout-display" src="Pascal_Quignard_0002.jpg" alt="<3>" id="img3" style="opacity:80%">
 		</div>
 
-		<div style="display:block; margin: 0 auto; padding-top:15px; text-align: center;">
+		<div id="evalButtons" style="display:block; margin: 0 auto; padding-top:15px; text-align: center;">
 			<button type="button" class="button-eval" style="background-color: #d73027; border-color: #b12922;" onclick="startEval(1)">1</button>
 			<button type="button" class="button-eval" style="background-color: beige;" onclick="startEval(2)">2</button> 
 			<button type="button" class="button-eval" style="background-color: beige;" onclick="startEval(3)">3</button>
