@@ -205,7 +205,7 @@ async function getRandomPicture(dir = "") {
 			});
 			var dir = randomLineFromText(data);
 			while(dir.length < 3) {
-				dir = randomLineFromText(data);
+				dir = "datasets/" + randomLineFromText(data);
 			} 
 		}
 		
