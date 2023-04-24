@@ -168,7 +168,9 @@ async function startEval(vote) {
 	});
 	await to;
 	lastFocusedImg = isSolo ? 2 : Math.floor(Math.random() * 2) + 1;
-	document.getElementById(`img${lastFocusedImg}`).style.border = "thick solid #FF0000";
+	document.getElementById(`img${lastFocusedImg}`).style.border = "5px solid #FF0000";
+	document.getElementById(`img${lastFocusedImg}`).style.height = "280px";
+	document.getElementById(`img${lastFocusedImg}`).style.width = "280px";
 	to = new Promise(function(resolve) {
 		setTimeout(function() {resolve("Delay")}, 1000);
 	});
@@ -180,6 +182,8 @@ async function startEval(vote) {
 	document.getElementById("img2").src = "YEP.png";
 	document.getElementById("img3").src = "YEP.png";
 	document.getElementById(`img${lastFocusedImg}`).style.border = "none";
+	document.getElementById(`img${lastFocusedImg}`).style.height = "285px";
+	document.getElementById(`img${lastFocusedImg}`).style.width = "285px";
 	evalStep++;
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = false;
