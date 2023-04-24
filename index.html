@@ -3,37 +3,17 @@
 <head>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<link rel="stylesheet" href="styles.css">
+	<script src="funcs.js"></script>
 </head>
-
-						<!--Switch display: none/grid-->
+<body>
 	<div id="registerPage" class="container" style= "display: grid">
 
-		
 		<div class="left">
-		  <!-- content for left column goes here -->
 
-		  <div
-		  style="height: 30%;">
-		  </div>
+		  <div style="height: 30%;"> </div> <!-- Spacer -->
 
 		  <h1 style="text-align:center;">Registrierung</h1>
 		  
-
-		  <body>
-			<!--<div class="grid-container">
-				<div class="grid-item">1</div>
-				<div class="grid-item">2</div>
-				<div class="grid-item">3</div>  
-				<div class="grid-item">4</div>
-				<div class="grid-item">5</div>
-				<div class="grid-item">6</div>  
-				<div class="grid-item">7</div>
-				<div class="grid-item">8</div>
-				<div class="grid-item">9</div>  
-			</div>-->
-			
-
-
 			<div class="img-layout-container" id="matrNrField">
 
 				<div class="registration_columns_left">
@@ -80,13 +60,9 @@
 			<div class="img-layout-container" id="finishedContainer" style="display:none;">
 				<h1 style="text-align:center;font-size:36pt;">Thank you for your participation!</h1>
 			</div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+			
+			
+			<div style="height: 20%;"> </div> <!-- Spacer -->
 			<button type="button" onclick="deleteAllCookies()">delete cookies</button>
 			<br>
 			<button type="button" id="samePersonSwapButton" style="width:170px" onclick="modeSwap()">Same Person Mode: OFF</button>
@@ -95,22 +71,20 @@
 			<span style="color:#000000">Max vote count </span>
 			<input type="number" id="voteCount" style="font-size:10pt; width:30pt" value=15>
 			<button type="button" onclick="setVote()">set</button>
-			<script src="funcs.js"></script>
 
 		</div>
 
 		<div class="right">
-		  <!-- content for right column goes here -->
+		
 		  <div class="image-container">
-
 			<img class="previewImage" src="Lance_Armstrong_0001.jpg" alt="<1>" id="pimg1">
-				<img class="previewImage" src="Nicolas_Cage_0001.jpg" alt="<2>" id="pimg2">
-				<img class="previewImage" src="Pascal_Quignard_0002.jpg" alt="<3>" id="pimg3">
+			<img class="previewImage" src="Nicolas_Cage_0001.jpg" alt="<2>" id="pimg2">
+			<img class="previewImage" src="Pascal_Quignard_0002.jpg" alt="<3>" id="pimg3">
 		  </div>
 
 		  <div class="text-container">
 			<p>In diesem Experiment werden Ihnen jeweils drei Gesichter angezeigt. <br>
-				Eines dieser Gesichter ist eingerahmt und von diesem sollen Sie die Attraktivität <br>anhand einer
+				Eines dieser Gesichter ist eingerahmt und von diesem sollen Sie die Attraktivit&auml;t <br>anhand einer
 				 Skala von 1-7 bewerten.</p>
 		  </div>
 		  
@@ -118,11 +92,11 @@
 	  
 	</div>
 
-	<!-- SEPARATION WHATEVER-->
+	<!-- ---------------End of reg page. Start of eval page.----------------------- -->
 						
 	<div id="ratePage" style="display: none">
 		<div class="actual-img-layout-container"> 
-				<h1>Bitte bewerte die Attraktivität des eingerahmten Gesichts:</h1>
+				<h1>Bitte bewerte die Attraktivit&auml;t des eingerahmten Gesichts:</h1>
 		</div>
 		
 		<div class="actual-img-layout-container" style="height:300px"> 

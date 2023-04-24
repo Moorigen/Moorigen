@@ -1,1 +1,1 @@
-this is a text
+Timestamp,PersonMode,PictureSource,MatrNr,Age,Gender,Seen1,Seen2,Seen3,EvalStep,SessionStep,FocusedImg,ChoiceTime,Vote

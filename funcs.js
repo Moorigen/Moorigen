@@ -85,8 +85,8 @@ var evalStep = 0;
 var sessionStep = 0;
 var lastSeenImages = "";
 var lastFocusedImg = 0;
+var buttonEnabledTimestamp = new Date();
 async function startEval(vote) {
-	console.log(evalStep);
 	if(evalStep == 0) {
 		var mNr = parseInt(document.getElementById("matrNrInput").value);
 		if (isNaN(mNr) || mNr < 10000 || mNr > 99999) {
@@ -120,8 +120,9 @@ async function startEval(vote) {
 		evalStep = isNaN(evalStepCk) ? 0 : evalStepCk;
 	} else {
 		sessionStep++;
+		var choiceTime = (new Date() - buttonEnabledTimestamp) / 1000;
 		//console.log(`${lastSeenImages}||${evalStep}|${sessionStep}|${lastFocusedImg}|${vote}`);
-		logPhp(`${getCookie("MatrNr")},${lastSeenImages},${evalStep},${sessionStep},${lastFocusedImg},${vote}`);
+		logPhp(`${new Date().getTime()},${(samePersonMode ? "SameP" : "DiffP")},${(ayayaMode ? "ayaOn" : "ayaOff")},${getCookie("MatrNr")},${getCookie("Age")},${getCookie("Gender")},${lastSeenImages},${evalStep},${sessionStep},${lastFocusedImg},${choiceTime},${vote}`);
 	}
 	if(evalStep >= maxVotes){
 		document.getElementById("imgContainer").style.display = "none";
@@ -143,14 +144,14 @@ async function startEval(vote) {
 		while ((path3[1] == path1[1] || path3[1] == path2[1]) && !samePersonMode) {
 			path3 = await getRandomPicture();
 		}
-		lastSeenImages = `${path1[0]}|${path2[0]}|${path3[0]}`;
+		lastSeenImages = `${path1[0]},${path2[0]},${path3[0]}`;
 		
 		document.getElementById("img1").setAttribute("src", path1[0]);
 		document.getElementById("img2").setAttribute("src", path2[0]);
 		document.getElementById("img3").setAttribute("src", path3[0]);
 	} else {
 		//putting the solo picture in the middle
-		lastSeenImages = `$solo|{path1[0]}|solo`;
+		lastSeenImages = `solo,${path1[0]},solo`;
 		document.getElementById("img2").setAttribute("src", path1[0]);
 	}
 	
@@ -188,6 +189,7 @@ async function startEval(vote) {
 	document.getElementById("evalButtons").querySelectorAll("button").forEach(function(button){
 		button.disabled = false;
 	});
+	buttonEnabledTimestamp = new Date();
 }
 
 const errorReturns = [
@@ -203,8 +205,8 @@ async function getRandomPicture(dir = "") {
 			url: "datasets/" + (ayayaMode ? "ayaya" : "lfw") + "/index.txt",
 			dataType: "text",
 			});
-			var dir = randomLineFromText(data);
-			while(dir.length < 3) {
+			var dir = "datasets/" + randomLineFromText(data);
+			while(dir.length < 10) {
 				dir = "datasets/" + randomLineFromText(data);
 			} 
 		}
@@ -214,9 +216,9 @@ async function getRandomPicture(dir = "") {
 			url: dir + "/index.txt",
 			dataType: "text",
 		});
-		var r = randomLineFromText(data2);
-		while(r.length < 3) {
-			r = randomLineFromText(data2);
+		var r = "datasets/" + randomLineFromText(data2);
+		while(r.length < 10) {
+			r = "datasets/" + randomLineFromText(data2);
 		}
 		return [r, dir]
 	}
