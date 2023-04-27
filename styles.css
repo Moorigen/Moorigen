@@ -158,6 +158,12 @@ p {
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px){
+	.right{
+		display: none;
+	}
+}
+
 .image-container {
 	display: flex;
  	justify-content: center;
