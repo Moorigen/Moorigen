@@ -113,6 +113,7 @@ async function startEval(vote) {
 		//document.getElementById("startButton").style.display = "none";
 		//document.getElementById("evalButtons").style.display = "block";
 		document.getElementById("registerPage").style.display = "none";
+		document.getElementById("registerPageBelow").style.display = "none";
 		document.getElementById("ratePage").style.display = "block";
 		
 		var evalStepCk = getCookie("evalStep");
