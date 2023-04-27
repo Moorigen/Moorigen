@@ -1,1 +1,11 @@
 Timestamp,PersonMode,PictureSource,MatrNr,Age,Gender,Seen1,Seen2,Seen3,EvalStep,SessionStep,FocusedImg,ChoiceTime,Vote
+1682337961085,DiffP,ayaOff,12679,45,maybe,solo,datasets/lfw/Roy_Williams/Roy_Williams_0003.jpg,solo,1,1,2,0.375,3
+1682337964781,DiffP,ayaOff,12679,45,maybe,solo,datasets/lfw/Kim_Dae-jung/Kim_Dae-jung_0008.jpg,solo,2,2,2,0.339,4
+1682337968511,DiffP,ayaOff,12679,45,maybe,solo,datasets/lfw/Lenny_Wilkens/Lenny_Wilkens_0003.jpg,solo,3,3,2,0.386,4
+1682337972396,DiffP,ayaOff,12679,45,maybe,datasets/lfw/Paul_Gascoigne/Paul_Gascoigne_0003.jpg,datasets/lfw/Patti_Labelle/Patti_Labelle_0001.jpg,datasets/lfw/Moshe_Katsav/Moshe_Katsav_0002.jpg,4,4,2,0.441,4
+1682337976135,DiffP,ayaOff,12679,45,maybe,datasets/lfw/Kalpana_Chawla/Kalpana_Chawla_0003.jpg,datasets/lfw/William_Bulger/William_Bulger_0001.jpg,datasets/lfw/Zinedine_Zidane/Zinedine_Zidane_0002.jpg,5,5,2,0.29,5
+1682586494316,DiffP,ayaOff,12345,52,t,solo,datasets/lfw/Tommy_Thompson/Tommy_Thompson_0005.jpg,solo,1,1,2,0.569,3
+1682586498937,DiffP,ayaOff,12345,52,t,solo,datasets/lfw/Michael_Caine/Michael_Caine_0003.jpg,solo,2,2,2,1.259,4
+1682586502745,DiffP,ayaOff,12345,52,t,solo,datasets/lfw/Rick_Santorum/Rick_Santorum_0001.jpg,solo,3,3,2,0.456,4
+1682586506932,DiffP,ayaOff,12345,52,t,datasets/lfw/Kemal_Dervis/Kemal_Dervis_0002.jpg,datasets/lfw/Katherine_Harris/Katherine_Harris_0003.jpg,datasets/lfw/Nadia_Petrova/Nadia_Petrova_0003.jpg,4,4,2,0.723,4
+canthisbeusedtotrollhmmm

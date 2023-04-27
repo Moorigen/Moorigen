@@ -5,6 +5,7 @@ body {
 
 h1 {
 	color: #000000;
+	font-size: min(32px, 3vw);
 }
 p {
 	color: #000000;
@@ -33,13 +34,15 @@ p {
 
 .actual-img-layout-container {
     margin: auto;
-    width: 900px;
+    width: 90%;
+	max-width: 900px;
 }
 
 .img-layout-display {
 	margin: auto;
-	width: 285px;
-	height: 285px;
+	width: 30%;
+	max-width: 300px;
+	/*height: 285px;*/
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	
 
@@ -107,20 +110,20 @@ p {
 	border-color: #66874D;
 	color: rgb(0, 0, 0);
 	text-align: center;
-	font-size: 54px;
-	padding: 6px 35px;
-	border-radius: 12px;
+	font-size: clamp(5px, 32px, 5vw);
+	padding: 6px min(32px, 3vw);
+	border-radius: min(12px, 2vw);
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-	margin: 10px;
+	margin: clamp(2px, 12px, 1vw);
 }.button-eval:disabled {
 	opacity: 0.6;
 	cursor: not-allowed;
 }
 
 .buttonDescription {
-	font-size: 32px;
+	font-size: min(32px, 3vw);
 	font-family: Century gothic, sans-serif;
-	padding: 0px 315px;
+	padding: 0px min(17%, 200px);
 }
 
 
