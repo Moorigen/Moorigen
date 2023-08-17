@@ -1,0 +1,10 @@
+Beim Laden der Seite wird eine Funktion ausgeführt, die prüft, ob Cookie values vorhanden sind (JS20).
+Wenn entsprechende cookies gefunden wurden, werden die Inputs auf diese Werte gesetzt und non-interactable getagt.
+Der Nutzer started mit der Registrierungsseite "registerPage" (HTML9) und entweder der Kurzbeschreibung auf der rechten Seite (HTML79) oder unter dem content (HTML99). Diese Anpassung passiert durch die Screen-breite des Geräts (CSS167).
+Klickt der Nutzer auf den "START" Button (HTML50) wird eine Funktion (JS89) ausgeführt, welche die Inputs validiert (JS91-105) und in die Cookies speichert(JS107-109). Es werden entsprechende Anzeigeboxen umgeschaltet, um auf den Bewertungs-Screen zu kommen (JS115-117)(HTML119).
+Die Bewertungsbuttons werden deaktiviert (JS135), damit nicht aus Versehen geklickt werden kann.
+Es wird der Pfad für das erste Bild geladen (JS138). Dies geschieht durch die Abfrage einer index Datei des Datensatzes, welche die Unterordner der aufzufindenen Personen listet (JS206). Wenn eine Person ausgewählt ist, wird ein Bild aus diesem Ordner auf die selbe Methode per index-Auflistung herangezogen (JS217).
+Die ersten Bildanzeigen können nur ein Bild enthalten, was in "soloIterations" gesetzt ist. Wenn "isSolo" wird - statt zwei weitere Bilder zu laden - lediglich das mittlere Bild auf die erwartete Resource gesetzt. Andernfalls kann wenn "samePersonMode" enabled ist, können spezifisch zwei weitere Bilder der selben person geladen werden.
+Es wird ein Delay von 250ms gesetzt, damit der Browser die Resourcen laden kann (JS160) und anschließend werden die Bilder sichtbar gemacht. Es wird 2000ms gewartet, ein zufälliges Bild rot eingerahmt, 1000ms gewartet und schließlich die Bilder entfernt, wie in dem Paper beschrieben (JS164-185).
+Schließlich werden die Bewertungsbuttons aktiviert (JS187)(HTML131).
+Die Interaktion dieser ruft wieder die selbe Funktion auf (JS89), jedoch ist diesmal der "evalStep" > 0 und es wird das Event in den log geschrieben (JS126), woraufhin der Prozess erneut durchlaufen wird oder die Session abgeschlossen (JS128-134)(HTML147).

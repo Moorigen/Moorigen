@@ -98,7 +98,7 @@ async function startEval(vote) {
 			console.log("cancelled: Invalid age");
 			return;
 		}
-		var gender = document.getElementById("genderInput").value;
+		var gender = document.getElementById("genderInput").value.replace(/\W/g, '');
 		if (gender.length < 1 || gender.length > 9){
 			console.log("cancelled: Invalid gender");
 			return;
@@ -126,8 +126,9 @@ async function startEval(vote) {
 		logPhp(`${new Date().getTime()},${(samePersonMode ? "SameP" : "DiffP")},${(ayayaMode ? "ayaOn" : "ayaOff")},${getCookie("MatrNr")},${getCookie("Age")},${getCookie("Gender")},${lastSeenImages},${evalStep},${sessionStep},${lastFocusedImg},${choiceTime},${vote}`);
 	}
 	if(evalStep >= maxVotes){
-		document.getElementById("imgContainer").style.display = "none";
-		document.getElementById("evalButtons").style.display = "none";
+		//document.getElementById("imgContainer").style.display = "none";
+		//document.getElementById("evalButtons").style.display = "none";
+		document.getElementById("ratePage").style.display = "none";
 		document.getElementById("finishedContainer").style.display = "block";
 		return;
 	}

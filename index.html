@@ -59,20 +59,20 @@
 					<span class="button-eval">Very Pretty</span>
 				</div>
 			</div>
-			<div class="img-layout-container" id="finishedContainer" style="display:none;">
-				<h1 style="text-align:center;font-size:36pt;">Thank you for your participation!</h1>
+			
+			<div style="display:none;"> <!-- dev tools -->
+				<div style="height: 20%;"> </div> <!-- Spacer -->
+				<button type="button" onclick="deleteAllCookies()">delete cookies</button>
+				<br>
+				<button type="button" id="samePersonSwapButton" style="width:170px" onclick="modeSwap()">Same Person Mode: OFF</button>
+				<button type="button" id="ayayaSwap" onclick="sourceSwap()">Anime: Off</button>
+				<br>
+				<span style="color:#000000">Max vote count </span>
+				<input type="number" id="voteCount" style="font-size:10pt; width:30pt" value=15>
+				<button type="button" onclick="setVote()">set</button>
 			</div>
 			
 			
-			<div style="height: 20%;"> </div> <!-- Spacer -->
-			<button type="button" onclick="deleteAllCookies()">delete cookies</button>
-			<br>
-			<button type="button" id="samePersonSwapButton" style="width:170px" onclick="modeSwap()">Same Person Mode: OFF</button>
-			<button type="button" id="ayayaSwap" onclick="sourceSwap()">Anime: Off</button>
-			<br>
-			<span style="color:#000000">Max vote count </span>
-			<input type="number" id="voteCount" style="font-size:10pt; width:30pt" value=15>
-			<button type="button" onclick="setVote()">set</button>
 
 		</div>
 
@@ -142,6 +142,10 @@
 			<span class="buttonDescription" >attraktiv</span>
 		</div>
 
+	</div>
+	
+	<div class="img-layout-container" id="finishedContainer" style="display:none;">
+				<h1 style="text-align:center;font-size:36pt;">Thank you for your participation!</h1>
 	</div>
 
 </body>

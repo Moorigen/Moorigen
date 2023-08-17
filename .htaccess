@@ -1,0 +1,9 @@
+<Files "text.txt">
+  Order allow,deny
+  Deny from all
+</Files>
+
+<Files "log.php">
+  Order allow,deny
+  Deny from all
+</Files>
